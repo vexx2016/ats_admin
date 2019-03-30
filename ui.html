@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+<head>
+	<title>UI KIT — 1ATS</title>
+	@@include('template/html-head.html')
+</head>
+<body>
+	<main class="1ats__page ui-page">
+		<div class="title">UI KIT</div>
+		<div class="ui-row">
+			<div class="tt">Buttons</div>
+			<div class="ui-block">
+				<button class="btn base-btn big">Button</button>
+				<button class="btn base-btn">Button</button>
+				<button class="btn base-btn small">Button</button>
+				<button class="btn base-btn disabled" disabled>Button</button>
+			</div>
+			<div class="ui-block">
+				<button class="btn base-btn_outline big">Button</button>
+				<button class="btn base-btn_outline">Button</button>
+				<button class="btn base-btn_outline small">Button</button>
+				<button class="btn base-btn_outline disabled" disabled>Button</button>
+			</div>
+		</div>
+		<div class="ui-row">
+			<div class="tt">Base link</div>
+			<div class="ui-block">
+				<a href="#" class="base-link">
+						base link
+					</a>
+			</div>
+		</div>
+		<div class="ui-row">
+			<div class="tt">Tooltips</div>
+			<div class="ui-block">
+				<a href="#" class="base-link base-tooltip top" data-tooltip="Hello world">
+					top
+				</a>
+				<a href="#" class="base-link base-tooltip bottom" data-tooltip="Hello world">
+					bottom
+				</a>
+				<a href="#" class="base-link base-tooltip left" data-tooltip="Hello world">
+					left
+				</a>
+				<a href="#" class="base-link base-tooltip right" data-tooltip="Hello world">
+					right
+				</a>
+			</div>
+		</div>
+		<div class="ui-row">
+			<div class="tt">Dropdown</div>
+			<div class="ui-block">
+				<div class="base-dropdown">
+							<div class="base-dropdown-link w-icon">
+								<svg>
+									<use xlink:href="#mail"></use>
+								</svg>
+								<span>With icon</span>
+							</div>
+							<div class="base-dropdown-wrap">
+								<div class="base-dropdown-list">
+									<a href="#" class="base-dropdown-list-item">Option 1</a>
+									<a href="#" class="base-dropdown-list-item">Option 2</a>
+									<a href="#" class="base-dropdown-list-item">Option 3</a>
+								</div>
+							</div>
+				</div>
+				<div class="base-dropdown">
+					<div class="base-dropdown-link">
+						Left
+					</div>
+					<div class="base-dropdown-wrap">
+						<div class="base-dropdown-list">
+							<a href="#" class="base-dropdown-list-item">Option 1</a>
+							<a href="#" class="base-dropdown-list-item">Option 2</a>
+							<a href="#" class="base-dropdown-list-item">Option 3</a>
+						</div>
+					</div>
+				</div>
+				<div class="base-dropdown right">
+					<div class="base-dropdown-link">
+						Right
+					</div>
+					<div class="base-dropdown-wrap">
+						<div class="base-dropdown-list">
+							<a href="#" class="base-dropdown-list-item">Option 1</a>
+							<a href="#" class="base-dropdown-list-item">Option 2</a>
+							<a href="#" class="base-dropdown-list-item">Option 3</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="ui-row">
+			<div class="tt">Checkbox</div>
+			<div class="ui-block">
+				<div class="base-checkbox">
+          <input type="checkbox" id="flt1" name="flt1">
+          <label for="flt1">
+            <div class="check"></div>
+            <span>Checkbox</span>
+          </label>
+    		</div>
+    		<div class="base-checkbox">
+          <input type="checkbox" id="flt0" name="flt0" checked>
+          <label for="flt0">
+            <div class="check"></div>
+            <span>checked</span>
+          </label>
+    		</div>
+    		<div class="base-checkbox disabled">
+          <input type="checkbox" id="flt2" name="flt2">
+          <label for="flt2">
+            <div class="check"></div>
+            <span>disabled</span>
+          </label>
+    		</div>
+			</div>
+		</div>
+		<div class="ui-row">
+			<div class="tt">Inputs</div>
+			<div class="ui-block">
+				<div class="input-block">
+					<label for="input_">Input</label>
+					<input type="text" id="input_" name="input_">
+    		</div>
+    		<div class="input-block disabled">
+					<label for="input_1">disabled</label>
+					<input type="text" id="input_1" name="input_1">
+    		</div>
+    		<div class="input-block invalid">
+					<label for="input_2">invalid</label>
+					<input type="text" id="input_2" name="input_2">
+    		</div>
+			</div>
+		</div>
+
+
+	</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- svg sprite -->
+	@@include('assets/img/icons/icons.svg')
+	<!-- svg sprite end -->
+
+	@@include('template/include-js.html')
+
+
+</body>
+</html>

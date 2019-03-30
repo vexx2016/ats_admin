@@ -1,0 +1,687 @@
+<!doctype html>
+<html>
+<head>
+	<title>Dashboard — 1ATS</title>
+	@@include('template/html-head.html')
+</head>
+<body>
+	<main class="1ats__page">
+		<div class="main-wrap">
+			@@include('template/sidebar.html')
+			<div class="main-container">
+				<div class="scrollbar-inner">
+					<header class="main-container__header">
+						<div class="base-dropdown">
+							<div class="base-dropdown-link w-icon">
+								<svg>
+									<use xlink:href="#add"></use>
+								</svg>
+								<span>Действия</span>
+							</div>
+							<div class="base-dropdown-wrap">
+								<div class="base-dropdown-list">
+									<a href="#" class="base-dropdown-list-item">Option 1</a>
+									<a href="#" class="base-dropdown-list-item">Option 2</a>
+									<a href="#" class="base-dropdown-list-item">Option 3</a>
+								</div>
+							</div>
+						</div>
+						<div class="base-dropdown">
+							<div class="base-dropdown-link w-icon">
+								<svg>
+									<use xlink:href="#graph"></use>
+								</svg>
+								<span>Отчеты</span>
+							</div>
+							<div class="base-dropdown-wrap">
+								<div class="base-dropdown-list">
+									<a href="#" class="base-dropdown-list-item">Option 1</a>
+									<a href="#" class="base-dropdown-list-item">Option 2</a>
+									<a href="#" class="base-dropdown-list-item">Option 3</a>
+								</div>
+							</div>
+						</div>
+						<div class="header-controls">
+							<div class="header-search">
+								<button class="btn header-search__open">
+									<svg>
+										<use xlink:href="#search"></use>
+									</svg>
+								</button>
+								<div class="input-mask">
+									<input type="text" placeholder="Поиск">
+								</div>
+								<button class="btn header-search__close">
+									<svg>
+										<use xlink:href="#cancel"></use>
+									</svg>
+								</button>
+								<a href="#" class="base-link">Расширенный поиск</a>
+							</div>
+							<a href="#" class="header-add-task base-tooltip" data-tooltip="Add Task">
+								<svg>
+									<use xlink:href="#list"></use>
+								</svg>
+							</a>
+							<div class="header-language">
+								<div class="base-dropdown right">
+									<div class="base-dropdown-link w-icon">
+										<svg>
+											<use xlink:href="#united-kingdom--clr"></use>
+										</svg>
+									</div>
+									<div class="base-dropdown-wrap">
+										<div class="base-dropdown-list">
+											<a href="#" class="base-dropdown-list-item">
+												<svg>
+													<use xlink:href="#russia--clr"></use>
+												</svg>
+												<span>Русский</span>
+											</a>
+											<a href="#" class="base-dropdown-list-item">
+												<svg>
+													<use xlink:href="#germany--clr"></use>
+												</svg>
+												<span>German</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</header>
+					<section class="main-container__body">
+						<div class="title">
+							<span class="over-title">Настройка</span>
+							Список АТС
+						</div>
+						<div class="page-filters">
+							<div class="icon">
+								<svg>
+									<use xlink:href="#filter"></use>
+								</svg>
+							</div>
+							<div class="inputs-row">
+								<div class="input-block id">
+									<input type="text" id="input_id" name="input_id" placeholder="ID">
+								</div>
+								<div class="input-block company">
+									<input type="text" id="input_company" name="input_company" placeholder="Компания">
+								</div>
+								<div class="input-block name">
+									<input type="text" id="input_name" name="input_name" placeholder="Название">
+								</div>
+								<div class="input-block number">
+									<input type="text" id="input_number" name="input_number" placeholder="Номер для уведомления">
+								</div>
+								<dl class="select select-filter scrollable">
+									<dt class="">
+										<input type="text" name="scope" class="required" placeholder="Статус">
+									</dt>
+									<dd>
+										<div class="select-options">
+											<div class="scroll-cont scrollbar-inner">
+												<div class="base-checkbox">
+													<input type="checkbox" id="flt1" name="flt1" checked>
+													<label for="flt1">
+													<div class="check"></div>
+													<span>Активный</span>
+													</label>
+												</div>
+												<div class="base-checkbox">
+													<input type="checkbox" id="flt2" name="flt2">
+													<label for="flt2">
+													<div class="check"></div>
+													<span>Отключенный</span>
+													</label>
+												</div>
+												<div class="base-checkbox">
+													<input type="checkbox" id="flt3" name="flt3">
+													<label for="flt3">
+													<div class="check"></div>
+													<span>С отрицательным балансом</span>
+													</label>
+												</div>
+												<div class="base-checkbox">
+													<input type="checkbox" id="flt4" name="flt4">
+													<label for="flt4">
+													<div class="check"></div>
+													<span>Забанен</span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</dd>
+								</dl>
+								<button class="btn base-btn ok-btn">OK</button>
+							</div>
+						</div>
+						<div class="table-container">
+							<div class="table-header">
+								<button class="btn base-btn popup-btn__open">
+									+ Создать
+								</button>
+								<div class="base-pagination">
+									<div class="page-count">
+										<span>показать</span>
+										<dl class="select select-filter select-flag scrollable fill">
+											<dt class="">
+												<input type="text" name="scope" class="required" value="10">
+											</dt>
+											<dd>
+												<div class="select-options">
+													<div class="scroll-cont scrollbar-inner">
+														<a data-value="10">10</a>
+														<a data-value="20" >20</a>
+														<a data-value="50" >50</a>
+														<a data-value="100" >100</a>
+														<a data-value="200" >200</a>
+													</div>
+												</div>
+											</dd>
+										</dl>
+									</div>
+									<div class="page-btns">
+										<button class="btn prev">
+											Пред.
+										</button>
+										<button class="btn num active">1</button>
+										<button class="btn num">2</button>
+										<button class="btn num">3</button>
+										<button class="btn num">4</button>
+										<button class="btn num">...</button>
+										<button class="btn num">78</button>
+										<button class="btn next">
+											След.
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="table-body">
+								<table class="base-table">
+									<thead>
+										<tr>
+											<td>
+												<span>ID</span>
+												<button class="btn table-sorting__btn">
+													<svg x="0px" y="0px" viewBox="0 0 384 384">
+													<g>
+														<polygon class="up" points="128,0 42.7,85.1 106.7,85.1 106.7,234.7 149.3,234.7 149.3,85.1 213.3,85.1 		"/>
+														<polygon class="down" points="277.3,298.9 277.3,149.3 234.7,149.3 234.7,298.9 170.7,298.9 256,384 341.3,298.9 		"/>
+													</g>
+													</svg>
+												</button>
+											</td>
+											<td>
+												<span>Дата и время создания</span>
+												<button class="btn table-sorting__btn up">
+													<svg x="0px" y="0px" viewBox="0 0 384 384">
+													<g>
+														<polygon class="up" points="128,0 42.7,85.1 106.7,85.1 106.7,234.7 149.3,234.7 149.3,85.1 213.3,85.1 		"/>
+														<polygon class="down" points="277.3,298.9 277.3,149.3 234.7,149.3 234.7,298.9 170.7,298.9 256,384 341.3,298.9 		"/>
+													</g>
+													</svg>
+												</button>
+											</td>
+											<td>
+												<span>Название</span>
+												<button class="btn table-sorting__btn">
+													<svg x="0px" y="0px" viewBox="0 0 384 384">
+													<g>
+														<polygon class="up" points="128,0 42.7,85.1 106.7,85.1 106.7,234.7 149.3,234.7 149.3,85.1 213.3,85.1 		"/>
+														<polygon class="down" points="277.3,298.9 277.3,149.3 234.7,149.3 234.7,298.9 170.7,298.9 256,384 341.3,298.9 		"/>
+													</g>
+													</svg>
+												</button>
+											</td>
+											<td>
+												<span>Статус</span>
+												<button class="btn table-sorting__btn down">
+													<svg x="0px" y="0px" viewBox="0 0 384 384">
+													<g>
+														<polygon class="up" points="128,0 42.7,85.1 106.7,85.1 106.7,234.7 149.3,234.7 149.3,85.1 213.3,85.1 		"/>
+														<polygon class="down" points="277.3,298.9 277.3,149.3 234.7,149.3 234.7,298.9 170.7,298.9 256,384 341.3,298.9 		"/>
+													</g>
+													</svg>
+												</button>
+											</td>
+											<td>Номер для уведомлений</td>
+											<td>Компания</td>
+											<td></td>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>8</td>
+											<td>13.08.2018  15:04</td>
+											<td>31231212412_9798243</td>
+											<td><div class="ats-status green"><span class="circle"></span><span>В сети</span></div></td>
+											<td>79797974332</td>
+											<td>3153109872_187912374</td>
+											<td>
+												<button class="btn table-action-btn show"><svg>
+													<use xlink:href="#eye"></use>
+												</svg></button>
+												<button class="btn table-action-btn edit"><svg>
+													<use xlink:href="#edit"></use>
+												</svg></button>
+												<button class="btn table-action-btn delete"><svg>
+													<use xlink:href="#remove"></use>
+												</svg></button>
+											</td>
+										</tr>
+										<tr>
+											<td>78980</td>
+											<td>27.08.2019  09:17</td>
+											<td>1767122412_098743</td>
+											<td><div class="ats-status grey"><span class="circle"></span><span>Нет связи с сервером</span></div></td>
+											<td>12300974332</td>
+											<td>01239872_5326374</td>
+											<td>
+												<button class="btn table-action-btn show"><svg>
+													<use xlink:href="#eye"></use>
+												</svg></button>
+												<button class="btn table-action-btn edit"><svg>
+													<use xlink:href="#edit"></use>
+												</svg></button>
+												<button class="btn table-action-btn delete"><svg>
+													<use xlink:href="#remove"></use>
+												</svg></button>
+											</td>
+										</tr>
+										<tr>
+											<td>123109</td>
+											<td>13.08.2018  15:04</td>
+											<td>31231212412_9798243</td>
+											<td><div class="ats-status orange"><span class="circle"></span><span>Отключенный</span></div></td>
+											<td>79797974332</td>
+											<td>3153109872_187912374</td>
+											<td>
+												<button class="btn table-action-btn show"><svg>
+													<use xlink:href="#eye"></use>
+												</svg></button>
+												<button class="btn table-action-btn edit"><svg>
+													<use xlink:href="#edit"></use>
+												</svg></button>
+												<button class="btn table-action-btn delete"><svg>
+													<use xlink:href="#remove"></use>
+												</svg></button>
+											</td>
+										</tr>
+										<tr>
+											<td>78980</td>
+											<td>27.08.2019  09:17</td>
+											<td>1767122412_098743</td>
+											<td><div class="ats-status grey"><span class="circle"></span><span>Нет связи с сервером</span></div></td>
+											<td>12300974332</td>
+											<td>01239872_5326374</td>
+											<td>
+												<button class="btn table-action-btn show"><svg>
+													<use xlink:href="#eye"></use>
+												</svg></button>
+												<button class="btn table-action-btn edit"><svg>
+													<use xlink:href="#edit"></use>
+												</svg></button>
+												<button class="btn table-action-btn delete"><svg>
+													<use xlink:href="#remove"></use>
+												</svg></button>
+											</td>
+										</tr>
+										<tr>
+											<td>123109</td>
+											<td>13.08.2018  15:04</td>
+											<td>31231212412_9798243</td>
+											<td><div class="ats-status orange"><span class="circle"></span><span>Отключенный</span></div></td>
+											<td>79797974332</td>
+											<td>3153109872_187912374</td>
+											<td>
+												<button class="btn table-action-btn show"><svg>
+													<use xlink:href="#eye"></use>
+												</svg></button>
+												<button class="btn table-action-btn edit"><svg>
+													<use xlink:href="#edit"></use>
+												</svg></button>
+												<button class="btn table-action-btn delete"><svg>
+													<use xlink:href="#remove"></use>
+												</svg></button>
+											</td>
+										</tr>
+										<tr>
+											<td>78980</td>
+											<td>27.08.2019  09:17</td>
+											<td>1767122412_098743</td>
+											<td><div class="ats-status grey"><span class="circle"></span><span>Нет связи с сервером</span></div></td>
+											<td>12300974332</td>
+											<td>01239872_5326374</td>
+											<td>
+												<button class="btn table-action-btn show"><svg>
+													<use xlink:href="#eye"></use>
+												</svg></button>
+												<button class="btn table-action-btn edit"><svg>
+													<use xlink:href="#edit"></use>
+												</svg></button>
+												<button class="btn table-action-btn delete"><svg>
+													<use xlink:href="#remove"></use>
+												</svg></button>
+											</td>
+										</tr>
+										<tr>
+											<td>123109</td>
+											<td>13.08.2018  15:04</td>
+											<td>31231212412_9798243</td>
+											<td><div class="ats-status orange"><span class="circle"></span><span>Отключенный</span></div></td>
+											<td>79797974332</td>
+											<td>3153109872_187912374</td>
+											<td>
+												<button class="btn table-action-btn show"><svg>
+													<use xlink:href="#eye"></use>
+												</svg></button>
+												<button class="btn table-action-btn edit"><svg>
+													<use xlink:href="#edit"></use>
+												</svg></button>
+												<button class="btn table-action-btn delete"><svg>
+													<use xlink:href="#remove"></use>
+												</svg></button>
+											</td>
+										</tr>
+										<tr>
+											<td>8</td>
+											<td>13.08.2018  15:04</td>
+											<td>31231212412_9798243</td>
+											<td><div class="ats-status green"><span class="circle"></span><span>В сети</span></div></td>
+											<td>79797974332</td>
+											<td>3153109872_187912374</td>
+											<td>
+												<button class="btn table-action-btn show"><svg>
+													<use xlink:href="#eye"></use>
+												</svg></button>
+												<button class="btn table-action-btn edit"><svg>
+													<use xlink:href="#edit"></use>
+												</svg></button>
+												<button class="btn table-action-btn delete"><svg>
+													<use xlink:href="#remove"></use>
+												</svg></button>
+											</td>
+										</tr>
+										<tr>
+											<td>78980</td>
+											<td>27.08.2019  09:17</td>
+											<td>1767122412_098743</td>
+											<td><div class="ats-status grey"><span class="circle"></span><span>Нет связи с сервером</span></div></td>
+											<td>12300974332</td>
+											<td>01239872_5326374</td>
+											<td>
+												<button class="btn table-action-btn show"><svg>
+													<use xlink:href="#eye"></use>
+												</svg></button>
+												<button class="btn table-action-btn edit"><svg>
+													<use xlink:href="#edit"></use>
+												</svg></button>
+												<button class="btn table-action-btn delete"><svg>
+													<use xlink:href="#remove"></use>
+												</svg></button>
+											</td>
+										</tr>
+										<tr>
+											<td>123109</td>
+											<td>13.08.2018  15:04</td>
+											<td>31231212412_9798243</td>
+											<td><div class="ats-status orange"><span class="circle"></span><span>Отключенный</span></div></td>
+											<td>79797974332</td>
+											<td>3153109872_187912374</td>
+											<td>
+												<button class="btn table-action-btn show"><svg>
+													<use xlink:href="#eye"></use>
+												</svg></button>
+												<button class="btn table-action-btn edit"><svg>
+													<use xlink:href="#edit"></use>
+												</svg></button>
+												<button class="btn table-action-btn delete"><svg>
+													<use xlink:href="#remove"></use>
+												</svg></button>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="row">
+							<div class="dashboard-card col-2 tasks">
+								<div class="dashboard-card__header">
+									<div class="name">Задачи</div>
+									<div class="filters">
+										<button class="btn tasks-filter active">сегодня</button>
+										<button class="btn tasks-filter">неделя</button>
+										<button class="btn tasks-filter">месяц</button>
+									</div>
+								</div>
+								<div class="dashboard-card__body scrollbar-inner">
+									<div class="task-item">
+										<button class="btn complete-task-btn">
+											<svg>
+												<use xlink:href="#checked"></use>
+											</svg>
+										</button>
+										<div class="task-title">
+											<a href="#">Make Metronic Great Again.Lorem Ipsum Amet</a>
+										</div>
+										<div class="task-tag" style="background: #f6a615">1ATS</div>
+									</div>
+									<div class="task-item">
+										<button class="btn complete-task-btn">
+											<svg>
+												<use xlink:href="#checked"></use>
+											</svg>
+										</button>
+										<div class="task-title">
+											<a href="#">Prepare Docs For Metting On Monday</a>
+										</div>
+										<div class="task-tag" style="background: #ec3333">Google</div>
+									</div>
+									<div class="task-item">
+										<button class="btn complete-task-btn">
+											<svg>
+												<use xlink:href="#checked"></use>
+											</svg>
+										</button>
+										<div class="task-title">
+											<a href="#">Make Widgets Great Again.Estudiat Communy Elit</a>
+										</div>
+										<div class="task-tag" style="background: #151515">Apple</div>
+									</div>
+									<div class="task-item">
+										<button class="btn complete-task-btn">
+											<svg>
+												<use xlink:href="#checked"></use>
+											</svg>
+										</button>
+										<div class="task-title">
+											<a href="#">Completa Financial Report For Emirates Airlines</a>
+										</div>
+										<div class="task-tag" style="background: #416dfe">facebook</div>
+									</div>
+									<div class="task-item">
+										<button class="btn complete-task-btn">
+											<svg>
+												<use xlink:href="#checked"></use>
+											</svg>
+										</button>
+										<div class="task-title">
+											<a href="#">Prepare Docs For Metting On Friday</a>
+										</div>
+										<div class="task-tag" style="background: #7cbb00">Microsoft</div>
+									</div>
+									<div class="task-item">
+										<button class="btn complete-task-btn">
+											<svg>
+												<use xlink:href="#checked"></use>
+											</svg>
+										</button>
+										<div class="task-title">
+											<a href="#">Completa Financial Report For Emirates Airlines</a>
+										</div>
+										<div class="task-tag" style="background: #416dfe">facebook</div>
+									</div>
+									<div class="task-item">
+										<button class="btn complete-task-btn">
+											<svg>
+												<use xlink:href="#checked"></use>
+											</svg>
+										</button>
+										<div class="task-title">
+											<a href="#">Prepare Docs For Metting On Friday</a>
+										</div>
+										<div class="task-tag" style="background: #7cbb00">Microsoft</div>
+									</div>
+									<div class="task-item">
+										<button class="btn complete-task-btn">
+											<svg>
+												<use xlink:href="#checked"></use>
+											</svg>
+										</button>
+										<div class="task-title">
+											<a href="#">Prepare Docs For Metting On Monday</a>
+										</div>
+										<div class="task-tag" style="background: #ec3333">Google</div>
+									</div>
+									<div class="task-item">
+										<button class="btn complete-task-btn">
+											<svg>
+												<use xlink:href="#checked"></use>
+											</svg>
+										</button>
+										<div class="task-title">
+											<a href="#">Make Widgets Great Again.Estudiat Communy Elit</a>
+										</div>
+										<div class="task-tag" style="background: #151515">Apple</div>
+									</div>
+								</div>
+							</div>
+							<div class="dashboard-card col-2 support">
+								<div class="dashboard-card__header">
+									<div class="name">Поддержка</div>
+								</div>
+								<div class="dashboard-card__body">
+									<img src="assets/img/support.png" alt="">
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+				<!--  -->
+				<div class="base-popup">
+					<div class="base-popup__container">
+						<div class="base-popup__title">Создать</div>
+						<form action="">
+							<div class="col">
+								<div class="input-block required">
+									<label for="input_1">Название</label>
+									<input type="text" id="input_1" name="input_1">
+								</div>
+								<div class="input-block required">
+									<label for="input_2">Код города</label>
+									<input type="text" id="input_2" name="input_2">
+								</div>
+								<div class="input-block">
+									<label for="input_3">Номер для уведомлений</label>
+									<input type="text" id="input_3" name="input_3">
+								</div>
+							</div>
+							<div class="col">
+								<div class="input-block required">
+									<label for="input_4">Кол-во одновременных звонков</label>
+									<input type="text" id="input_4" name="input_4">
+								</div>
+								<div class="select-block required">
+									<label>Статус</label>
+									<dl class="select select-filter select-flag scrollable">
+										<dt class="">
+											<input type="text" name="scope" class="required">
+										</dt>
+										<dd>
+											<div class="select-options">
+												<div class="scroll-cont scrollbar-inner">
+													<a data-value="10">10</a>
+													<a data-value="20" >20</a>
+													<a data-value="50" >50</a>
+													<a data-value="100" >100</a>
+													<a data-value="200" >200</a>
+												</div>
+											</div>
+										</dd>
+									</dl>
+								</div>
+								<div class="select-block required">
+									<label>Компания</label>
+									<dl class="select select-filter select-flag scrollable">
+										<dt class="">
+											<input type="text" name="scope" class="required">
+										</dt>
+										<dd>
+											<div class="select-options">
+												<div class="scroll-cont scrollbar-inner">
+													<a data-value="10">10</a>
+													<a data-value="20" >20</a>
+													<a data-value="50" >50</a>
+													<a data-value="100" >100</a>
+													<a data-value="200" >200</a>
+												</div>
+											</div>
+										</dd>
+									</dl>
+								</div>
+								<div class="select-block">
+									<label>Сервер</label>
+									<dl class="select select-filter select-flag scrollable">
+										<dt class="">
+											<input type="text" name="scope" class="required">
+										</dt>
+										<dd>
+											<div class="select-options">
+												<div class="scroll-cont scrollbar-inner">
+													<a data-value="10">10</a>
+													<a data-value="20" >20</a>
+													<a data-value="50" >50</a>
+													<a data-value="100" >100</a>
+													<a data-value="200" >200</a>
+												</div>
+											</div>
+										</dd>
+									</dl>
+								</div>
+							</div>
+						</form>
+						<div class="base-popup__footer">
+							<button class="btn base-btn grey popup-btn__close">Отмена</button>
+							<button class="btn base-btn line">Создать и редактировать</button>
+							<button class="btn base-btn">Создать</button>
+						</div>
+					</div>
+				</div>
+				<!--  -->
+			</div>
+		</div>
+	</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- svg sprite -->
+	@@include('assets/img/icons/icons.svg')
+	<!-- svg sprite end -->
+
+	@@include('template/include-js.html')
+
+
+</body>
+</html>

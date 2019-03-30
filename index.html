@@ -1,0 +1,769 @@
+<!doctype html>
+<html>
+<head>
+	<title>Dashboard — 1ATS</title>
+	@@include('template/html-head.html')
+</head>
+<body>
+	<main class="1ats__page">
+		<div class="main-wrap">
+			@@include('template/sidebar.html')
+			<div class="main-container">
+				<div class="scrollbar-inner">
+					<header class="main-container__header">
+						<div class="base-dropdown">
+							<div class="base-dropdown-link w-icon">
+								<svg>
+									<use xlink:href="#add"></use>
+								</svg>
+								<span>Действия</span>
+							</div>
+							<div class="base-dropdown-wrap">
+								<div class="base-dropdown-list">
+									<a href="#" class="base-dropdown-list-item">Option 1</a>
+									<a href="#" class="base-dropdown-list-item">Option 2</a>
+									<a href="#" class="base-dropdown-list-item">Option 3</a>
+								</div>
+							</div>
+						</div>
+						<div class="base-dropdown">
+							<div class="base-dropdown-link w-icon">
+								<svg>
+									<use xlink:href="#graph"></use>
+								</svg>
+								<span>Отчеты</span>
+							</div>
+							<div class="base-dropdown-wrap">
+								<div class="base-dropdown-list">
+									<a href="#" class="base-dropdown-list-item">Option 1</a>
+									<a href="#" class="base-dropdown-list-item">Option 2</a>
+									<a href="#" class="base-dropdown-list-item">Option 3</a>
+								</div>
+							</div>
+						</div>
+						<div class="header-controls">
+							<div class="header-search">
+								<button class="btn header-search__open">
+									<svg>
+										<use xlink:href="#search"></use>
+									</svg>
+								</button>
+								<div class="input-mask">
+									<input type="text" placeholder="Поиск">
+								</div>
+								<button class="btn header-search__close">
+									<svg>
+										<use xlink:href="#cancel"></use>
+									</svg>
+								</button>
+								<a href="#" class="base-link">Расширенный поиск</a>
+							</div>
+							<a href="#" class="header-add-task base-tooltip" data-tooltip="Add Task">
+								<svg>
+									<use xlink:href="#list"></use>
+								</svg>
+							</a>
+							<div class="header-language">
+								<div class="base-dropdown right">
+									<div class="base-dropdown-link w-icon">
+										<svg>
+											<use xlink:href="#united-kingdom--clr"></use>
+										</svg>
+									</div>
+									<div class="base-dropdown-wrap">
+										<div class="base-dropdown-list">
+											<a href="#" class="base-dropdown-list-item">
+												<svg>
+													<use xlink:href="#russia--clr"></use>
+												</svg>
+												<span>Русский</span>
+											</a>
+											<a href="#" class="base-dropdown-list-item">
+												<svg>
+													<use xlink:href="#germany--clr"></use>
+												</svg>
+												<span>German</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</header>
+					<section class="main-container__body">
+						<div class="title">Dashboard</div>
+						<div class="row">
+							<div class="dashboard-card col-3 servers">
+								<div class="dashboard-card__header">
+									<div class="name">Сервера</div>
+									<div class="filters">
+										<button class="btn on base-tooltip" data-tooltip="Включен"></button>
+										<button class="btn off base-tooltip" data-tooltip="Выключен"></button>
+										<button class="btn inactive base-tooltip" data-tooltip="Неактивный"></button>
+									</div>
+								</div>
+								<div class="dashboard-card__body scrollbar-inner">
+									<div class="server-item">
+										<a href="#" class="server-link on"><span>test.1telecom.ru</span></a>
+										<span class="time">13.08.2018 15:04</span>
+									</div>
+									<div class="server-item">
+										<a href="#" class="server-link inactive"><span>10.1.0.2</span></a>
+										<span class="time">27.11.2018 12:57</span>
+									</div>
+									<div class="server-item">
+										<a href="#" class="server-link off"><span>sip.1vats.ru</span></a>
+										<span class="time">16.08.2018 17:51</span>
+									</div>
+									<div class="server-item">
+										<a href="#" class="server-link on"><span>test.1vats.ru</span></a>
+										<span class="time">19.08.2018 22:04</span>
+									</div>
+									<div class="server-item">
+										<a href="#" class="server-link on"><span>sip.1telecom.ru</span></a>
+										<span class="time">05.10.2018 10:39</span>
+									</div>
+									<div class="server-item">
+										<a href="#" class="server-link inactive"><span>10.2.2.0</span></a>
+										<span class="time">22.07.2018 15:13</span>
+									</div>
+									<div class="server-item">
+										<a href="#" class="server-link off"><span>sip.1vats.ru</span></a>
+										<span class="time">16.08.2018 17:51</span>
+									</div>
+									<div class="server-item">
+										<a href="#" class="server-link on"><span>test.1vats.ru</span></a>
+										<span class="time">19.08.2018 22:04</span>
+									</div>
+									<div class="server-item">
+										<a href="#" class="server-link on"><span>sip.1telecom.ru</span></a>
+										<span class="time">05.10.2018 10:39</span>
+									</div>
+									<div class="server-item">
+										<a href="#" class="server-link inactive"><span>10.2.2.0</span></a>
+										<span class="time">22.07.2018 15:13</span>
+									</div>
+								</div>
+							</div>
+							<div class="dashboard-card col-3 processes">
+								<div class="dashboard-card__header">
+									<div class="name">Процессы</div>
+								</div>
+								<div class="dashboard-card__body scrollbar-inner">
+									<a href="#" class="process-item add">
+										<span class="icon">
+											<svg>
+												<use xlink:href="#plus_p"></use>
+											</svg>
+										</span>
+										<span class="txt">
+											Cоздан пользователь <i>user567</i>
+										</span>
+									</a>
+									<a href="#" class="process-item edit">
+										<span class="icon">
+											<svg>
+												<use xlink:href="#edit_p"></use>
+											</svg>
+										</span>
+										<span class="txt">
+											Изменен пароль и email пользователь <i>user567</i>
+										</span>
+									</a>
+									<a href="#" class="process-item delete">
+										<span class="icon">
+											<svg>
+												<use xlink:href="#remove_p"></use>
+											</svg>
+										</span>
+										<span class="txt">
+											Удален пользователь <i>user777</i>
+										</span>
+									</a>
+									<a href="#" class="process-item add">
+										<span class="icon">
+											<svg>
+												<use xlink:href="#plus_p"></use>
+											</svg>
+										</span>
+										<span class="txt">
+											Cоздан пользователь <i>user347</i>
+										</span>
+									</a>
+									<a href="#" class="process-item edit">
+										<span class="icon">
+											<svg>
+												<use xlink:href="#edit_p"></use>
+											</svg>
+										</span>
+										<span class="txt">
+											Изменен пароль и email пользователь <i>user567</i>
+										</span>
+									</a>
+									<a href="#" class="process-item delete">
+										<span class="icon">
+											<svg>
+												<use xlink:href="#remove_p"></use>
+											</svg>
+										</span>
+										<span class="txt">
+											Удален пользователь <i>user777</i>
+										</span>
+									</a>
+									<a href="#" class="process-item add">
+										<span class="icon">
+											<svg>
+												<use xlink:href="#plus_p"></use>
+											</svg>
+										</span>
+										<span class="txt">
+											Cоздан пользователь <i>user347</i>
+										</span>
+									</a>
+								</div>
+							</div>
+							<div class="dashboard-card col-3 actions">
+								<div class="dashboard-card__header">
+									<div class="name">Действия</div>
+									<div class="date">
+										<svg>
+											<use xlink:href="#time"></use>
+										</svg>
+										<span>23.01.19</span>
+									</div>
+								</div>
+								<div class="dashboard-card__body">
+									<div class="row">
+										<div class="item">
+											<div class="num">23</div>
+											<div class="txt">аккаунта <br>Создано</div>
+										</div>
+										<div class="item">
+											<div class="num">5</div>
+											<div class="txt">Активных <br>серверов</div>
+										</div>
+										<div class="item">
+											<div class="num">456</div>
+											<div class="txt">Активных <br>пользователей</div>
+										</div>
+									</div>
+									<!-- <div class="row">
+										<div class="item">
+											<div class="num">456</div>
+											<div class="txt">Активных <br>пользователей</div>
+										</div>
+									</div> -->
+									<!-- <img src="../assets/img/actions.svg" alt="" class="img"> -->
+								</div>
+							</div>
+						</div>
+						<div class="row full">
+							<div class="dashboard-card col-1 status">
+								<div class="inner-block status__numbers">
+									<div class="row violet">
+										<div class="txt">
+											<div class="t">Member Profit</div>
+											<div class="s">Awerage Weekly Profit</div>
+										</div>
+										<div class="num">+$17,800</div>
+									</div>
+									<div class="row red">
+										<div class="txt">
+											<div class="t">Orders</div>
+											<div class="s">Weekly Customer Orders</div>
+										</div>
+										<div class="num">+1,800</div>
+									</div>
+									<div class="row green">
+										<div class="txt">
+											<div class="t">Issue Reports</div>
+											<div class="s">System bugs and issues</div>
+										</div>
+										<div class="num">-27,49%</div>
+									</div>
+								</div>
+								<div class="inner-block status__chart">
+									<div class="lft">
+										<div class="name">Aктивная аудитория</div>
+										<div class="info">Количество пользователей сервиса</div>
+										<img src="assets/img/graph.png" alt="">
+									</div>
+									<div class="rght">
+										<div class="filters">
+											<button class="btn base-btn_outline small active">
+												день
+											</button>
+											<button class="btn base-btn_outline small">
+												неделя
+											</button>
+											<button class="btn base-btn_outline small">
+												месяц
+											</button>
+										</div>
+										<div class="controls">
+											<button class="btn base-btn_outline small prev">
+												<svg>
+													<use xlink:href="#next"></use>
+												</svg>
+											</button>
+											<button class="btn base-btn_outline small next">
+												<svg>
+													<use xlink:href="#next"></use>
+												</svg>
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="inner-block status__diagram">
+									<div class="name">Статистика звонков</div>
+									<img src="assets/img/diagram2.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="dashboard-card col-2 tasks">
+								<div class="dashboard-card__header">
+									<div class="name">Задачи</div>
+									<div class="filters">
+										<button class="btn tasks-filter active">сегодня</button>
+										<button class="btn tasks-filter">неделя</button>
+										<button class="btn tasks-filter">месяц</button>
+									</div>
+								</div>
+								<div class="dashboard-card__body scrollbar-inner">
+									<div class="task-item">
+										<button class="btn complete-task-btn">
+											<svg>
+												<use xlink:href="#checked"></use>
+											</svg>
+										</button>
+										<div class="task-title">
+											<a href="#">Make Metronic Great Again.Lorem Ipsum Amet</a>
+										</div>
+										<div class="task-tag" style="background: #f6a615">1ATS</div>
+									</div>
+									<div class="task-item">
+										<button class="btn complete-task-btn">
+											<svg>
+												<use xlink:href="#checked"></use>
+											</svg>
+										</button>
+										<div class="task-title">
+											<a href="#">Prepare Docs For Metting On Monday</a>
+										</div>
+										<div class="task-tag" style="background: #ec3333">Google</div>
+									</div>
+									<div class="task-item">
+										<button class="btn complete-task-btn">
+											<svg>
+												<use xlink:href="#checked"></use>
+											</svg>
+										</button>
+										<div class="task-title">
+											<a href="#">Make Widgets Great Again.Estudiat Communy Elit</a>
+										</div>
+										<div class="task-tag" style="background: #151515">Apple</div>
+									</div>
+									<div class="task-item">
+										<button class="btn complete-task-btn">
+											<svg>
+												<use xlink:href="#checked"></use>
+											</svg>
+										</button>
+										<div class="task-title">
+											<a href="#">Completa Financial Report For Emirates Airlines</a>
+										</div>
+										<div class="task-tag" style="background: #416dfe">facebook</div>
+									</div>
+									<div class="task-item">
+										<button class="btn complete-task-btn">
+											<svg>
+												<use xlink:href="#checked"></use>
+											</svg>
+										</button>
+										<div class="task-title">
+											<a href="#">Prepare Docs For Metting On Friday</a>
+										</div>
+										<div class="task-tag" style="background: #7cbb00">Microsoft</div>
+									</div>
+									<div class="task-item">
+										<button class="btn complete-task-btn">
+											<svg>
+												<use xlink:href="#checked"></use>
+											</svg>
+										</button>
+										<div class="task-title">
+											<a href="#">Completa Financial Report For Emirates Airlines</a>
+										</div>
+										<div class="task-tag" style="background: #416dfe">facebook</div>
+									</div>
+									<div class="task-item">
+										<button class="btn complete-task-btn">
+											<svg>
+												<use xlink:href="#checked"></use>
+											</svg>
+										</button>
+										<div class="task-title">
+											<a href="#">Prepare Docs For Metting On Friday</a>
+										</div>
+										<div class="task-tag" style="background: #7cbb00">Microsoft</div>
+									</div>
+									<div class="task-item">
+										<button class="btn complete-task-btn">
+											<svg>
+												<use xlink:href="#checked"></use>
+											</svg>
+										</button>
+										<div class="task-title">
+											<a href="#">Prepare Docs For Metting On Monday</a>
+										</div>
+										<div class="task-tag" style="background: #ec3333">Google</div>
+									</div>
+									<div class="task-item">
+										<button class="btn complete-task-btn">
+											<svg>
+												<use xlink:href="#checked"></use>
+											</svg>
+										</button>
+										<div class="task-title">
+											<a href="#">Make Widgets Great Again.Estudiat Communy Elit</a>
+										</div>
+										<div class="task-tag" style="background: #151515">Apple</div>
+									</div>
+								</div>
+							</div>
+							<div class="dashboard-card col-2 support">
+								<div class="dashboard-card__header">
+									<div class="name">Поддержка</div>
+								</div>
+								<div class="dashboard-card__body">
+									<img src="assets/img/support.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="dashboard-card col-4 logs">
+								<div class="dashboard-card__header">
+									<div class="name">Logs</div>
+								</div>
+								<div class="dashboard-card__body scrollbar-inner">
+									<div class="log-item">
+										<div class="time">15:04</div>
+										<div class="txt">System error - Check</div>
+									</div>
+									<div class="log-item">
+										<div class="time">14:59</div>
+										<div class="txt">DB overloaded 80%</div>
+									</div>
+									<div class="log-item">
+										<div class="time">14:54</div>
+										<div class="txt">New invoice received </div>
+									</div>
+									<div class="log-item">
+										<div class="time">14:32</div>
+										<div class="txt">12 new users registered </div>
+									</div>
+									<div class="log-item">
+										<div class="time">14:21</div>
+										<div class="txt">New invoice received</div>
+									</div>
+									<div class="log-item">
+										<div class="time">15:04</div>
+										<div class="txt">System error - Check</div>
+									</div>
+									<div class="log-item">
+										<div class="time">14:59</div>
+										<div class="txt">DB overloaded 80%</div>
+									</div>
+									<div class="log-item">
+										<div class="time">14:54</div>
+										<div class="txt">New invoice received </div>
+									</div>
+									<div class="log-item">
+										<div class="time">14:32</div>
+										<div class="txt">12 new users registered </div>
+									</div>
+									<div class="log-item">
+										<div class="time">14:21</div>
+										<div class="txt">New invoice received</div>
+									</div>
+									<div class="log-item">
+										<div class="time">15:04</div>
+										<div class="txt">System error - Check</div>
+									</div>
+									<div class="log-item">
+										<div class="time">14:59</div>
+										<div class="txt">DB overloaded 80%</div>
+									</div>
+									<div class="log-item">
+										<div class="time">14:54</div>
+										<div class="txt">New invoice received </div>
+									</div>
+									<div class="log-item">
+										<div class="time">14:32</div>
+										<div class="txt">12 new users registered </div>
+									</div>
+									<div class="log-item">
+										<div class="time">14:21</div>
+										<div class="txt">New invoice received</div>
+									</div>
+								</div>
+							</div>
+							<div class="dashboard-card col-6 table">
+								<div class="dashboard-card__header">
+									<div class="name">АТС</div>
+									<div class="base-btn-select right">
+										<button class="btn base-btn_outline small base-btn-select_btn">
+											выбрать
+										</button>
+										<div class="list-wrap">
+											<div class="list">
+												<div class="row">
+													<div class="base-checkbox">
+									                    <input type="checkbox" id="flt1" name="flt1">
+									                    <label for="flt1">
+									                      <div class="check"></div>
+									                      <span>Активные</span>
+									                    </label>
+										            </div>
+										        </div>
+										        <div class="row">
+													<div class="base-checkbox">
+									                    <input type="checkbox" id="flt2" name="flt2">
+									                    <label for="flt2">
+									                      <div class="check"></div>
+									                      <span>Заблокированые</span>
+									                    </label>
+										            </div>
+										        </div>
+										        <div class="row">
+													<div class="base-checkbox">
+									                    <input type="checkbox" id="flt3" name="flt3">
+									                    <label for="flt3">
+									                      <div class="check"></div>
+									                      <span>С отрицательными балансом</span>
+									                    </label>
+										            </div>
+										        </div>
+										        <div class="row">
+													<div class="base-checkbox">
+									                    <input type="checkbox" id="flt4" name="flt4">
+									                    <label for="flt4">
+									                      <div class="check"></div>
+									                      <span>Неактивные более 90 дней</span>
+									                    </label>
+										            </div>
+										        </div>
+										        <div class="row">
+													<div class="base-checkbox">
+									                    <input type="checkbox" id="flt5" name="flt5">
+									                    <label for="flt5">
+									                      <div class="check"></div>
+									                      <span>С 1 номером</span>
+									                    </label>
+										            </div>
+										        </div>
+										        <div class="row">
+													<div class="base-checkbox">
+									                    <input type="checkbox" id="flt6" name="flt6">
+									                    <label for="flt6">
+									                      <div class="check"></div>
+									                      <span>С 10 номерами</span>
+									                    </label>
+										            </div>
+										        </div>
+										        <div class="row">
+													<div class="base-checkbox">
+									                    <input type="checkbox" id="flt7" name="flt7">
+									                    <label for="flt7">
+									                      <div class="check"></div>
+									                      <span>Без заполненных обязательных данных</span>
+									                    </label>
+										            </div>
+										        </div>
+										        <div class="row">
+													<div class="base-checkbox">
+									                    <input type="checkbox" id="flt8" name="flt8">
+									                    <label for="flt8">
+									                      <div class="check"></div>
+									                      <span>На тестовом периоде</span>
+									                    </label>
+										            </div>
+										        </div>
+											</div>
+										</div>
+									</div>
+									
+								</div>
+								<div class="dashboard-card__body scrollbar-inner">
+									<table class="base-table">
+										<thead>
+											<tr>
+												<td>
+													<div class="base-checkbox">
+									                    <input type="checkbox" id="ch1" name="ch1">
+									                    <label for="ch1">
+									                      <div class="check"></div>
+									                    </label>
+									                </div>
+												</td>
+												<td>Номер</td>
+												<td>Название</td>
+												<td>Дата</td>
+												<td>Статус</td>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>
+													<div class="base-checkbox">
+									                    <input type="checkbox" id="ch2" name="ch2">
+									                    <label for="ch2">
+									                      <div class="check"></div>
+									                    </label>
+									                </div>
+									            </td>
+												<td>0007-41420007-4142</td>
+												<td>Kessler</td>
+												<td>11/28/2017</td>
+												<td><span style="color: #1ce158">Success</span></td>
+											</tr>
+											<tr>
+												<td>
+													<div class="base-checkbox">
+									                    <input type="checkbox" id="ch3" name="ch3">
+									                    <label for="ch3">
+									                      <div class="check"></div>
+									                    </label>
+									                </div>
+									            </td>
+												<td>0007-41420007-4142</td>
+												<td>Kessler</td>
+												<td>11/28/2017</td>
+												<td><span style="color: #416dfe">Pending</span></td>
+											</tr>
+											<tr>
+												<td>
+													<div class="base-checkbox">
+									                    <input type="checkbox" id="ch4" name="ch4">
+									                    <label for="ch4">
+									                      <div class="check"></div>
+									                    </label>
+									                </div>
+									            </td>
+												<td>0007-41420007-4142</td>
+												<td>Kessler</td>
+												<td>11/28/2017</td>
+												<td><span style="color: #ec3333">Danger</span></td>
+											</tr>
+											<tr>
+												<td>
+													<div class="base-checkbox">
+									                    <input type="checkbox" id="ch5" name="ch5">
+									                    <label for="ch5">
+									                      <div class="check"></div>
+									                    </label>
+									                </div>
+									            </td>
+												<td>0007-41420007-4142</td>
+												<td>Kessler</td>
+												<td>11/28/2017</td>
+												<td><span style="color: #1ce158">Success</span></td>
+											</tr>
+											<tr>
+												<td>
+													<div class="base-checkbox">
+									                    <input type="checkbox" id="ch6" name="ch6">
+									                    <label for="ch6">
+									                      <div class="check"></div>
+									                    </label>
+									                </div>
+									            </td>
+												<td>0007-41420007-4142</td>
+												<td>Kessler</td>
+												<td>11/28/2017</td>
+												<td><span style="color: #416dfe">Pending</span></td>
+											</tr>
+											<tr>
+												<td>
+													<div class="base-checkbox">
+									                    <input type="checkbox" id="ch7" name="ch7">
+									                    <label for="ch7">
+									                      <div class="check"></div>
+									                    </label>
+									                </div>
+									            </td>
+												<td>0007-41420007-4142</td>
+												<td>Kessler</td>
+												<td>11/28/2017</td>
+												<td><span style="color: #1ce158">Success</span></td>
+											</tr>
+											<tr>
+												<td>
+													<div class="base-checkbox">
+									                    <input type="checkbox" id="ch8" name="ch8">
+									                    <label for="ch8">
+									                      <div class="check"></div>
+									                    </label>
+									                </div>
+									            </td>
+												<td>0007-41420007-4142</td>
+												<td>Kessler</td>
+												<td>11/28/2017</td>
+												<td><span style="color: #1ce158">Success</span></td>
+											</tr>
+											<tr>
+												<td>
+													<div class="base-checkbox">
+									                    <input type="checkbox" id="ch9" name="ch9">
+									                    <label for="ch9">
+									                      <div class="check"></div>
+									                    </label>
+									                </div>
+									            </td>
+												<td>0007-41420007-4142</td>
+												<td>Kessler</td>
+												<td>11/28/2017</td>
+												<td><span style="color: #1ce158">Success</span></td>
+											</tr>
+										</tbody>
+									</table>
+
+									<!-- <div class="base-checkbox">
+					                    <input type="checkbox" id="digest" name="digest" v-on:change='digestFilter' checked required>
+					                    <label for="digest">
+					                      <div class="check"></div>
+					                      <span>дайджести</span>
+					                    </label>
+					                </div> -->
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+	</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- svg sprite -->
+	@@include('assets/img/icons/icons.svg')
+	<!-- svg sprite end -->
+
+	@@include('template/include-js.html')
+
+
+</body>
+</html>
