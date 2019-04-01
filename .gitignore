@@ -4,3 +4,4 @@ build
 .idea
 .sass-cache
 .DC_Store
+.DS_Store
