@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-	<title>Внешние номера — 1ATS</title>
+	<title>Компании — 1ATS</title>
 	<meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="shortcut icon" href="../../assets/favicon.ico" type="image/x-icon">
@@ -312,8 +312,8 @@
 					</header>
 					<section class="main-container__body">
 						<div class="title">
-							<span class="over-title">Настройка</span>
-							Внешние номера
+							<span class="over-title">Пользователи</span>
+							Компании
 						</div>
 						<div class="page-filters">
 							<div class="icon">
@@ -328,14 +328,14 @@
 									<input type="text" id="input_id" name="input_id" placeholder="ID">
 								</div>
 								<div class="input-block company">
-									<input type="text" id="input_company" name="input_company" placeholder="АТС">
+									<input type="text" id="input_company" name="input_company" placeholder="Название">
 								</div>
 								<div class="input-block name">
-									<input type="text" id="input_name" name="input_name" placeholder="Номер">
+									<input type="text" id="input_name" name="input_name" placeholder="Номер договора">
 								</div>
 								<dl class="select select-filter scrollable">
 									<dt class="">
-										<input type="text" name="scope" class="required" placeholder="Тип">
+										<input type="text" name="scope" class="required" placeholder="Тип клиента">
 									</dt>
 									<dd>
 										<div class="select-options">
@@ -344,34 +344,39 @@
 													<input type="checkbox" id="flt1" name="flt1" checked>
 													<label for="flt1">
 													<div class="check"></div>
-													<span>Золотой</span>
+													<span>Физическое лицо</span>
 													</label>
 												</div>
 												<div class="base-checkbox">
 													<input type="checkbox" id="flt2" name="flt2">
 													<label for="flt2">
 													<div class="check"></div>
-													<span>Серебряный</span>
-													</label>
-												</div>
-												<div class="base-checkbox">
-													<input type="checkbox" id="flt3" name="flt3">
-													<label for="flt3">
-													<div class="check"></div>
-													<span>Бронзовый</span>
-													</label>
-												</div>
-												<div class="base-checkbox">
-													<input type="checkbox" id="flt4" name="flt4">
-													<label for="flt4">
-													<div class="check"></div>
-													<span>Обычный</span>
+													<span>Юридическое лицо</span>
 													</label>
 												</div>
 											</div>
 										</div>
 									</dd>
 								</dl>
+								<dl class="select select-filter scrollable balance">
+									<dt class="">
+										<input type="text" name="scope" class="required" placeholder="Баланс">
+									</dt>
+									<dd>
+										<div class="select-options">
+											<div class="scroll-cont scrollbar-inner">
+												<a data-value=">">></a>
+												<a data-value=">=" >>=</a>
+												<a data-value="=" >=</a>
+												<a data-value="<" ><</a>
+												<a data-value="<=" ><=</a>
+											</div>
+										</div>
+									</dd>
+								</dl>
+								<div class="input-block balance-num">
+									<input type="text" id="input_name" name="input_name" placeholder="">
+								</div>
 								<button class="btn base-btn ok-btn">OK</button>
 							</div>
 						</div>
@@ -427,22 +432,24 @@
 												<span>Дата и время создания</span>
 											</td>
 											<td>
-												<span>Номер</span>
+												<span>Название</span>
 											</td>
 											<td>
-												<span>Тип</span>
+												<span>Тип клиента</span>
 											</td>
-											<td>АТС</td>
+											<td>Номер договора</td>
+											<td>Баланс</td>
 											<td></td>
 										</tr>
 									</thead>
 									<tbody>
 										<tr>
-											<td>8</td>
+											<td>46</td>
 											<td>13.08.2018  15:04</td>
-											<td>79797974332</td>
-											<td><div class="number-type silver"><span class="circle"></span><span>Серебряный</span></div></td>
-											<td><span class="ats">3153109872_187912374</span></td>
+											<td>79123179797_4331122</td>
+											<td>Физическое лицо</td>
+											<td>31531</td>
+											<td>30</td>
 											<td>
 												<button class="btn table-action-btn show"><svg>
 													<use xlink:href="#eye"></use>
@@ -456,11 +463,12 @@
 											</td>
 										</tr>
 										<tr>
-											<td>234</td>
-											<td>13.08.2018  15:04</td>
-											<td>12317974332</td>
-											<td><div class="number-type gold"><span class="circle"></span><span>Золотой</span></div></td>
-											<td><span class="ats">3153109872_187912374</span></td>
+											<td>11</td>
+											<td>17.12.2018  10:15</td>
+											<td>3758249103_327841</td>
+											<td>Физическое лицо</td>
+											<td>1231</td>
+											<td>-300</td>
 											<td>
 												<button class="btn table-action-btn show"><svg>
 													<use xlink:href="#eye"></use>
@@ -474,11 +482,12 @@
 											</td>
 										</tr>
 										<tr>
-											<td>098</td>
+											<td>25</td>
 											<td>13.08.2018  15:04</td>
-											<td>79797974332</td>
-											<td><div class="number-type bronze"><span class="circle"></span><span>Бронзовый</span></div></td>
-											<td><span class="ats">3153109872_187912374</span></td>
+											<td>1489123819_178231321</td>
+											<td>Физическое лицо</td>
+											<td>78541</td>
+											<td>0</td>
 											<td>
 												<button class="btn table-action-btn show"><svg>
 													<use xlink:href="#eye"></use>
@@ -492,11 +501,12 @@
 											</td>
 										</tr>
 										<tr>
-											<td>8</td>
+											<td>46</td>
 											<td>13.08.2018  15:04</td>
-											<td>79797974332</td>
-											<td><div class="number-type regular"><span class="circle"></span><span>Обычный</span></div></td>
-											<td><span class="ats">3153109872_187912374</span></td>
+											<td>79123179797_4331122</td>
+											<td>Физическое лицо</td>
+											<td>31531</td>
+											<td>30</td>
 											<td>
 												<button class="btn table-action-btn show"><svg>
 													<use xlink:href="#eye"></use>
@@ -510,11 +520,12 @@
 											</td>
 										</tr>
 										<tr>
-											<td>8</td>
+											<td>46</td>
 											<td>13.08.2018  15:04</td>
-											<td>79797974332</td>
-											<td><div class="number-type silver"><span class="circle"></span><span>Серебряный</span></div></td>
-											<td><span class="ats">3153109872_187912374</span></td>
+											<td>79123179797_4331122</td>
+											<td>Физическое лицо</td>
+											<td>31531</td>
+											<td>30</td>
 											<td>
 												<button class="btn table-action-btn show"><svg>
 													<use xlink:href="#eye"></use>
@@ -528,11 +539,12 @@
 											</td>
 										</tr>
 										<tr>
-											<td>234</td>
+											<td>46</td>
 											<td>13.08.2018  15:04</td>
-											<td>12317974332</td>
-											<td><div class="number-type gold"><span class="circle"></span><span>Золотой</span></div></td>
-											<td><span class="ats">3153109872_187912374</span></td>
+											<td>79123179797_4331122</td>
+											<td>Физическое лицо</td>
+											<td>31531</td>
+											<td>30</td>
 											<td>
 												<button class="btn table-action-btn show"><svg>
 													<use xlink:href="#eye"></use>
@@ -546,11 +558,12 @@
 											</td>
 										</tr>
 										<tr>
-											<td>098</td>
+											<td>46</td>
 											<td>13.08.2018  15:04</td>
-											<td>79797974332</td>
-											<td><div class="number-type bronze"><span class="circle"></span><span>Бронзовый</span></div></td>
-											<td><span class="ats">3153109872_187912374</span></td>
+											<td>79123179797_4331122</td>
+											<td>Физическое лицо</td>
+											<td>31531</td>
+											<td>30</td>
 											<td>
 												<button class="btn table-action-btn show"><svg>
 													<use xlink:href="#eye"></use>
@@ -564,11 +577,31 @@
 											</td>
 										</tr>
 										<tr>
-											<td>8</td>
+											<td>46</td>
 											<td>13.08.2018  15:04</td>
-											<td>79797974332</td>
-											<td><div class="number-type regular"><span class="circle"></span><span>Обычный</span></div></td>
-											<td><span class="ats">3153109872_187912374</span></td>
+											<td>79123179797_4331122</td>
+											<td>Физическое лицо</td>
+											<td>31531</td>
+											<td>30</td>
+											<td>
+												<button class="btn table-action-btn show"><svg>
+													<use xlink:href="#eye"></use>
+												</svg></button>
+												<button class="btn table-action-btn edit"><svg>
+													<use xlink:href="#edit"></use>
+												</svg></button>
+												<button class="btn table-action-btn delete"><svg>
+													<use xlink:href="#remove"></use>
+												</svg></button>
+											</td>
+										</tr>
+										<tr>
+											<td>46</td>
+											<td>13.08.2018  15:04</td>
+											<td>79123179797_4331122</td>
+											<td>Физическое лицо</td>
+											<td>31531</td>
+											<td>30</td>
 											<td>
 												<button class="btn table-action-btn show"><svg>
 													<use xlink:href="#eye"></use>
@@ -716,11 +749,23 @@
 						<form action="">
 							<div class="col">
 								<div class="input-block required">
-									<label for="input_1">Номер</label>
+									<label for="input_1">Название</label>
 									<input type="text" id="input_1" name="input_1">
 								</div>
+								<div class="input-block">
+									<label for="input_2">Номер договора</label>
+									<input type="text" id="input_2" name="input_2">
+								</div>
+								<div class="input-block">
+									<label for="input_2">Контактное лицо</label>
+									<input type="text" id="input_2" name="input_2">
+								</div>
+								<div class="input-block">
+									<label for="input_2">Телефон для связи</label>
+									<input type="text" id="input_2" name="input_2">
+								</div>
 								<div class="select-block required">
-									<label>Тип</label>
+									<label>Тип клиента</label>
 									<dl class="select select-filter select-flag scrollable">
 										<dt class="">
 											<input type="text" name="scope" class="required">
@@ -728,23 +773,81 @@
 										<dd>
 											<div class="select-options">
 												<div class="scroll-cont scrollbar-inner">
-													<a data-value="10">Золотой</a>
-													<a data-value="20" >Серебряный</a>
-													<a data-value="50" >Бронзовый</a>
-													<a data-value="100" >Обычный</a>
+													<a data-value="10">1</a>
+													<a data-value="20" >2</a>
+													<a data-value="50" >3</a>
+													<a data-value="100" >4</a>
 												</div>
 											</div>
 										</dd>
 									</dl>
 								</div>
+								<div class="select-block ">
+									<label>Правовая форма</label>
+									<dl class="select select-filter select-flag scrollable">
+										<dt class="">
+											<input type="text" name="scope" class="required">
+										</dt>
+										<dd>
+											<div class="select-options">
+												<div class="scroll-cont scrollbar-inner">
+													<a data-value="10">1</a>
+													<a data-value="20" >2</a>
+													<a data-value="50" >3</a>
+													<a data-value="100" >4</a>
+												</div>
+											</div>
+										</dd>
+									</dl>
+								</div>
+								<div class="input-block">
+									<label for="input_2">ИНН</label>
+									<input type="text" id="input_2" name="input_2">
+								</div>
+								<div class="input-block">
+									<label for="input_2">КПП</label>
+									<input type="text" id="input_2" name="input_2">
+								</div>
+								<div class="input-block">
+									<label for="input_2">Тип тарифа</label>
+									<input type="text" id="input_2" name="input_2">
+								</div>
 							</div>
 							<div class="col">
 								<div class="input-block">
-									<label for="input_4">Номер договора</label>
+									<label for="input_4">ОГРН</label>
 									<input type="text" id="input_4" name="input_4">
 								</div>
 								<div class="input-block">
-									<label for="input_4">ID АТС</label>
+									<label for="input_4">ОКПО</label>
+									<input type="text" id="input_5" name="input_5">
+								</div>
+								<div class="input-block">
+									<label for="input_4">Юридический адрес</label>
+									<input type="text" id="input_5" name="input_5">
+								</div>
+								<div class="input-block">
+									<label for="input_4">Фактический адрес</label>
+									<input type="text" id="input_5" name="input_5">
+								</div>
+								<div class="input-block">
+									<label for="input_4">Адрес для корреспонденции</label>
+									<input type="text" id="input_5" name="input_5">
+								</div>
+								<div class="input-block">
+									<label for="input_4">Номер счета</label>
+									<input type="text" id="input_5" name="input_5">
+								</div>
+								<div class="input-block">
+									<label for="input_4">Название банка</label>
+									<input type="text" id="input_5" name="input_5">
+								</div>
+								<div class="input-block">
+									<label for="input_4">Корр. счет</label>
+									<input type="text" id="input_5" name="input_5">
+								</div>
+								<div class="input-block">
+									<label for="input_4">БИК</label>
 									<input type="text" id="input_5" name="input_5">
 								</div>
 							</div>

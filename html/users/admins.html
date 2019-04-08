@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-	<title>Внешние номера — 1ATS</title>
+	<title>Администраторы — 1ATS</title>
 	<meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="shortcut icon" href="../../assets/favicon.ico" type="image/x-icon">
@@ -312,73 +312,13 @@
 					</header>
 					<section class="main-container__body">
 						<div class="title">
-							<span class="over-title">Настройка</span>
-							Внешние номера
-						</div>
-						<div class="page-filters">
-							<div class="icon">
-								<svg>
-									<use xlink:href="#filter"></use>
-								</svg>
-							</div>
-							<span class="page-filters__btn">Фильтры</span>
-							<!-- <button class="btn page-filters__btn">Показать фильтры</button> -->
-							<div class="inputs-row">
-								<div class="input-block id">
-									<input type="text" id="input_id" name="input_id" placeholder="ID">
-								</div>
-								<div class="input-block company">
-									<input type="text" id="input_company" name="input_company" placeholder="АТС">
-								</div>
-								<div class="input-block name">
-									<input type="text" id="input_name" name="input_name" placeholder="Номер">
-								</div>
-								<dl class="select select-filter scrollable">
-									<dt class="">
-										<input type="text" name="scope" class="required" placeholder="Тип">
-									</dt>
-									<dd>
-										<div class="select-options">
-											<div class="scroll-cont scrollbar-inner">
-												<div class="base-checkbox">
-													<input type="checkbox" id="flt1" name="flt1" checked>
-													<label for="flt1">
-													<div class="check"></div>
-													<span>Золотой</span>
-													</label>
-												</div>
-												<div class="base-checkbox">
-													<input type="checkbox" id="flt2" name="flt2">
-													<label for="flt2">
-													<div class="check"></div>
-													<span>Серебряный</span>
-													</label>
-												</div>
-												<div class="base-checkbox">
-													<input type="checkbox" id="flt3" name="flt3">
-													<label for="flt3">
-													<div class="check"></div>
-													<span>Бронзовый</span>
-													</label>
-												</div>
-												<div class="base-checkbox">
-													<input type="checkbox" id="flt4" name="flt4">
-													<label for="flt4">
-													<div class="check"></div>
-													<span>Обычный</span>
-													</label>
-												</div>
-											</div>
-										</div>
-									</dd>
-								</dl>
-								<button class="btn base-btn ok-btn">OK</button>
-							</div>
+							<span class="over-title">Пользователи</span>
+							Администраторы
 						</div>
 						<div class="table-container">
 							<div class="table-header">
 								<button class="btn base-btn popup-btn__open">
-									+ Создать
+									+ Добавить
 								</button>
 								<div class="base-pagination">
 									<div class="page-count">
@@ -422,27 +362,43 @@
 										<tr>
 											<td>
 												<span>ID</span>
+												<button class="btn table-sorting__btn">
+													<svg x="0px" y="0px" viewBox="0 0 384 384">
+													<g>
+														<polygon class="up" points="128,0 42.7,85.1 106.7,85.1 106.7,234.7 149.3,234.7 149.3,85.1 213.3,85.1 		"/>
+														<polygon class="down" points="277.3,298.9 277.3,149.3 234.7,149.3 234.7,298.9 170.7,298.9 256,384 341.3,298.9 		"/>
+													</g>
+													</svg>
+												</button>
 											</td>
 											<td>
-												<span>Дата и время создания</span>
+												<span>Логин</span>
+												<button class="btn table-sorting__btn up">
+													<svg x="0px" y="0px" viewBox="0 0 384 384">
+													<g>
+														<polygon class="up" points="128,0 42.7,85.1 106.7,85.1 106.7,234.7 149.3,234.7 149.3,85.1 213.3,85.1 		"/>
+														<polygon class="down" points="277.3,298.9 277.3,149.3 234.7,149.3 234.7,298.9 170.7,298.9 256,384 341.3,298.9 		"/>
+													</g>
+													</svg>
+												</button>
 											</td>
-											<td>
-												<span>Номер</span>
-											</td>
-											<td>
-												<span>Тип</span>
-											</td>
-											<td>АТС</td>
+											<td>Имя</td>
+											<td>Фамилия</td>
+											<td>E-mail</td>
+											<td>Роль</td>
+											<td>Статус</td>
 											<td></td>
 										</tr>
 									</thead>
 									<tbody>
 										<tr>
 											<td>8</td>
-											<td>13.08.2018  15:04</td>
-											<td>79797974332</td>
-											<td><div class="number-type silver"><span class="circle"></span><span>Серебряный</span></div></td>
-											<td><span class="ats">3153109872_187912374</span></td>
+											<td>name_33</td>
+											<td>Name</td>
+											<td>Surname</td>
+											<td>mail@cc.vv</td>
+											<td>user</td>
+											<td><div class="ats-status green"><span class="circle"></span><span>В сети</span></div></td>
 											<td>
 												<button class="btn table-action-btn show"><svg>
 													<use xlink:href="#eye"></use>
@@ -456,29 +412,13 @@
 											</td>
 										</tr>
 										<tr>
-											<td>234</td>
-											<td>13.08.2018  15:04</td>
-											<td>12317974332</td>
-											<td><div class="number-type gold"><span class="circle"></span><span>Золотой</span></div></td>
-											<td><span class="ats">3153109872_187912374</span></td>
-											<td>
-												<button class="btn table-action-btn show"><svg>
-													<use xlink:href="#eye"></use>
-												</svg></button>
-												<button class="btn table-action-btn edit"><svg>
-													<use xlink:href="#edit"></use>
-												</svg></button>
-												<button class="btn table-action-btn delete"><svg>
-													<use xlink:href="#remove"></use>
-												</svg></button>
-											</td>
-										</tr>
-										<tr>
-											<td>098</td>
-											<td>13.08.2018  15:04</td>
-											<td>79797974332</td>
-											<td><div class="number-type bronze"><span class="circle"></span><span>Бронзовый</span></div></td>
-											<td><span class="ats">3153109872_187912374</span></td>
+											<td>11</td>
+											<td>lokirt</td>
+											<td>Name</td>
+											<td>Surname</td>
+											<td>cgaga@cc.vv</td>
+											<td>superuser</td>
+											<td><div class="ats-status green"><span class="circle"></span><span>В сети</span></div></td>
 											<td>
 												<button class="btn table-action-btn show"><svg>
 													<use xlink:href="#eye"></use>
@@ -493,10 +433,32 @@
 										</tr>
 										<tr>
 											<td>8</td>
-											<td>13.08.2018  15:04</td>
-											<td>79797974332</td>
-											<td><div class="number-type regular"><span class="circle"></span><span>Обычный</span></div></td>
-											<td><span class="ats">3153109872_187912374</span></td>
+											<td>name_33</td>
+											<td>Name</td>
+											<td>Surname</td>
+											<td>mail@cc.vv</td>
+											<td>user</td>
+											<td><div class="ats-status green"><span class="circle"></span><span>В сети</span></div></td>
+											<td>
+												<button class="btn table-action-btn show"><svg>
+													<use xlink:href="#eye"></use>
+												</svg></button>
+												<button class="btn table-action-btn edit"><svg>
+													<use xlink:href="#edit"></use>
+												</svg></button>
+												<button class="btn table-action-btn delete"><svg>
+													<use xlink:href="#remove"></use>
+												</svg></button>
+											</td>
+										</tr>
+										<tr>
+											<td>11</td>
+											<td>lokirt</td>
+											<td>Name</td>
+											<td>Surname</td>
+											<td>cgaga@cc.vv</td>
+											<td>superuser</td>
+											<td><div class="ats-status green"><span class="circle"></span><span>В сети</span></div></td>
 											<td>
 												<button class="btn table-action-btn show"><svg>
 													<use xlink:href="#eye"></use>
@@ -511,10 +473,12 @@
 										</tr>
 										<tr>
 											<td>8</td>
-											<td>13.08.2018  15:04</td>
-											<td>79797974332</td>
-											<td><div class="number-type silver"><span class="circle"></span><span>Серебряный</span></div></td>
-											<td><span class="ats">3153109872_187912374</span></td>
+											<td>name_33</td>
+											<td>Name</td>
+											<td>Surname</td>
+											<td>mail@cc.vv</td>
+											<td>user</td>
+											<td><div class="ats-status green"><span class="circle"></span><span>В сети</span></div></td>
 											<td>
 												<button class="btn table-action-btn show"><svg>
 													<use xlink:href="#eye"></use>
@@ -528,29 +492,13 @@
 											</td>
 										</tr>
 										<tr>
-											<td>234</td>
-											<td>13.08.2018  15:04</td>
-											<td>12317974332</td>
-											<td><div class="number-type gold"><span class="circle"></span><span>Золотой</span></div></td>
-											<td><span class="ats">3153109872_187912374</span></td>
-											<td>
-												<button class="btn table-action-btn show"><svg>
-													<use xlink:href="#eye"></use>
-												</svg></button>
-												<button class="btn table-action-btn edit"><svg>
-													<use xlink:href="#edit"></use>
-												</svg></button>
-												<button class="btn table-action-btn delete"><svg>
-													<use xlink:href="#remove"></use>
-												</svg></button>
-											</td>
-										</tr>
-										<tr>
-											<td>098</td>
-											<td>13.08.2018  15:04</td>
-											<td>79797974332</td>
-											<td><div class="number-type bronze"><span class="circle"></span><span>Бронзовый</span></div></td>
-											<td><span class="ats">3153109872_187912374</span></td>
+											<td>11</td>
+											<td>lokirt</td>
+											<td>Name</td>
+											<td>Surname</td>
+											<td>cgaga@cc.vv</td>
+											<td>superuser</td>
+											<td><div class="ats-status green"><span class="circle"></span><span>В сети</span></div></td>
 											<td>
 												<button class="btn table-action-btn show"><svg>
 													<use xlink:href="#eye"></use>
@@ -565,10 +513,32 @@
 										</tr>
 										<tr>
 											<td>8</td>
-											<td>13.08.2018  15:04</td>
-											<td>79797974332</td>
-											<td><div class="number-type regular"><span class="circle"></span><span>Обычный</span></div></td>
-											<td><span class="ats">3153109872_187912374</span></td>
+											<td>name_33</td>
+											<td>Name</td>
+											<td>Surname</td>
+											<td>mail@cc.vv</td>
+											<td>user</td>
+											<td><div class="ats-status green"><span class="circle"></span><span>В сети</span></div></td>
+											<td>
+												<button class="btn table-action-btn show"><svg>
+													<use xlink:href="#eye"></use>
+												</svg></button>
+												<button class="btn table-action-btn edit"><svg>
+													<use xlink:href="#edit"></use>
+												</svg></button>
+												<button class="btn table-action-btn delete"><svg>
+													<use xlink:href="#remove"></use>
+												</svg></button>
+											</td>
+										</tr>
+										<tr>
+											<td>11</td>
+											<td>lokirt</td>
+											<td>Name</td>
+											<td>Surname</td>
+											<td>cgaga@cc.vv</td>
+											<td>superuser</td>
+											<td><div class="ats-status green"><span class="circle"></span><span>В сети</span></div></td>
 											<td>
 												<button class="btn table-action-btn show"><svg>
 													<use xlink:href="#eye"></use>
@@ -716,11 +686,25 @@
 						<form action="">
 							<div class="col">
 								<div class="input-block required">
-									<label for="input_1">Номер</label>
+									<label for="input_1">Имя</label>
 									<input type="text" id="input_1" name="input_1">
 								</div>
+								<div class="input-block required">
+									<label for="input_2">Фамилия</label>
+									<input type="text" id="input_2" name="input_2">
+								</div>
+								<div class="input-block required">
+									<label for="input_3">Логин</label>
+									<input type="text" id="input_3" name="input_3">
+								</div>
+								<div class="input-block required">
+									<label for="input_4">Пароль</label>
+									<input type="text" id="input_4" name="input_4">
+								</div>
+							</div>
+							<div class="col">
 								<div class="select-block required">
-									<label>Тип</label>
+									<label>Роль</label>
 									<dl class="select select-filter select-flag scrollable">
 										<dt class="">
 											<input type="text" name="scope" class="required">
@@ -728,30 +712,28 @@
 										<dd>
 											<div class="select-options">
 												<div class="scroll-cont scrollbar-inner">
-													<a data-value="10">Золотой</a>
-													<a data-value="20" >Серебряный</a>
-													<a data-value="50" >Бронзовый</a>
-													<a data-value="100" >Обычный</a>
+													<a data-value="10">10</a>
+													<a data-value="20" >20</a>
+													<a data-value="50" >50</a>
+													<a data-value="100" >100</a>
+													<a data-value="200" >200</a>
 												</div>
 											</div>
 										</dd>
 									</dl>
 								</div>
-							</div>
-							<div class="col">
 								<div class="input-block">
-									<label for="input_4">Номер договора</label>
-									<input type="text" id="input_4" name="input_4">
+									<label for="input_5">E-mail</label>
+									<input type="text" id="input_5" name="input_5">
 								</div>
 								<div class="input-block">
-									<label for="input_4">ID АТС</label>
-									<input type="text" id="input_5" name="input_5">
+									<label >Аватар</label>
+									<button class="btn base-btn">Загрузить</button>
 								</div>
 							</div>
 						</form>
 						<div class="base-popup__footer">
 							<button class="btn base-btn grey popup-btn__close">Отмена</button>
-							<button class="btn base-btn line">Создать и редактировать</button>
 							<button class="btn base-btn">Создать</button>
 						</div>
 					</div>

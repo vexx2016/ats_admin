@@ -365,6 +365,18 @@ body {
         -ms-flex-line-pack: center;
             align-content: center;
     width: 100%; }
+    .page-filters .inputs-row .select.balance {
+      width: 80px;
+      min-width: 80px;
+      margin-right: 5px; }
+      .page-filters .inputs-row .select.balance.select-filter dd .select-options a {
+        margin-bottom: 10px; }
+        .page-filters .inputs-row .select.balance.select-filter dd .select-options a:last-of-type {
+          margin-bottom: 0; }
+      .page-filters .inputs-row .select.balance.select-filter dd .select-options a:before {
+        display: none; }
+    .page-filters .inputs-row .input-block.balance-num {
+      width: 100px; }
     .page-filters .inputs-row .input-block {
       display: block;
       margin-right: 20px;
@@ -538,6 +550,11 @@ body {
     margin-bottom: 3px; }
     .table-body .table-action-btn:hover svg {
       fill: #f18a17; }
+    .table-body .table-action-btn.setup {
+      margin-right: 20px; }
+      .table-body .table-action-btn.setup svg {
+        width: 18px;
+        height: 18px; }
     .table-body .table-action-btn.show {
       margin-right: 20px; }
       .table-body .table-action-btn.show svg {

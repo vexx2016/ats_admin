@@ -316,9 +316,8 @@
                }else{
                  parent.removeClass('select-selected');
                }
-               trigger.removeClass('active').find('input').val(($(this).html()));
-               ticketsSum();
-
+               trigger.removeClass('active').find('input').val(($(this).html().replace('&lt;','<').replace('&gt;', '>')));
+              // console.log($(this).html().replace('&lt;','<').replace('&gt;', '>'))
                if (parent.data('target-input') && jQuery(this).data('value') != null) {
                    jQuery(parent.data('target-input')).val(jQuery(this).data('value')).trigger('change');
                }
