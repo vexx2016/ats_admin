@@ -1,0 +1,5 @@
+.base-popup[data-popup="setup-popup"] .base-popup__container {
+  max-width: 780px; }
+
+.base-popup[data-popup="setup-popup"] .table-container {
+  margin-bottom: 0; }

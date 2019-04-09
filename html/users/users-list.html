@@ -27,7 +27,7 @@
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#f39616">
 <meta name="msapplication-TileColor" content="#151515">
 <meta name="theme-color" content="#151515">
-	<link rel="stylesheet" href="../../assets/css/settings.css">
+<link rel="stylesheet" href="../../assets/css/users.css">
 </head>
 <body>
 	<main class="1ats__page">
@@ -435,7 +435,7 @@
 											<td>Администратор</td>
 											<td>19483181_123213</td>
 											<td>
-												<button class="btn table-action-btn setup"><svg>
+												<button class="btn table-action-btn setup popup-btn__open" data-popup="setup-popup"><svg>
 													<use xlink:href="#setup"></use>
 												</svg></button>
 												<button class="btn table-action-btn show"><svg>
@@ -457,7 +457,7 @@
 											<td>Клиент</td>
 											<td>029376_82137</td>
 											<td>
-												<button class="btn table-action-btn setup"><svg>
+												<button class="btn table-action-btn setup popup-btn__open" data-popup="setup-popup"><svg>
 													<use xlink:href="#setup"></use>
 												</svg></button>
 												<button class="btn table-action-btn show"><svg>
@@ -479,7 +479,7 @@
 											<td>Администратор</td>
 											<td>19483181_123213</td>
 											<td>
-												<button class="btn table-action-btn setup"><svg>
+												<button class="btn table-action-btn setup popup-btn__open" data-popup="setup-popup"><svg>
 													<use xlink:href="#setup"></use>
 												</svg></button>
 												<button class="btn table-action-btn show"><svg>
@@ -501,7 +501,7 @@
 											<td>Клиент</td>
 											<td>029376_82137</td>
 											<td>
-												<button class="btn table-action-btn setup"><svg>
+												<button class="btn table-action-btn setup popup-btn__open" data-popup="setup-popup"><svg>
 													<use xlink:href="#setup"></use>
 												</svg></button>
 												<button class="btn table-action-btn show"><svg>
@@ -716,6 +716,296 @@
 							<button class="btn base-btn grey popup-btn__close">Отмена</button>
 							<button class="btn base-btn">Создать</button>
 						</div>
+					</div>
+				</div>
+				<!--  -->
+				<!--  -->
+				<div class="base-popup" data-popup="setup-popup">
+					<div class="base-popup__container">
+						<div class="base-popup__title">Пользователь</div>
+						<div class="base-tab">
+							<div class="base-tab__header">
+								<div class="scrollbar-inner">
+									<button class="btn base-tab__btn active" data-tabname="user">Пользователь</button>
+									<button class="btn base-tab__btn" data-tabname="phone_book">Телефонная книга</button>
+									<button class="btn base-tab__btn" data-tabname="contacts">Контакты</button>
+									<button class="btn base-tab__btn" data-tabname="parametrs">Параметры аккаунта</button>
+								</div>
+							</div>
+							<div class="base-tab__body">
+								<div class="base-tab__block active" data-tabname="user">
+									<form action="">
+										<div class="col">
+											<div class="input-block">
+												<label for="input_1">ID</label>
+												<input type="text" id="input_1" name="input_1" value="111">
+											</div>
+											<div class="input-block">
+												<label for="input_1">Имя</label>
+												<input type="text" id="input_1" name="input_1">
+											</div>
+											<div class="input-block">
+												<label for="input_2">Фамилия</label>
+												<input type="text" id="input_2" name="input_2">
+											</div>
+											<div class="input-block">
+												<label for="input_3">E-mail</label>
+												<input type="text" id="input_3" name="input_3">
+											</div>
+										</div>
+										<div class="col">
+											<div class="select-block">
+												<label>Роль</label>
+												<dl class="select select-filter select-flag scrollable">
+													<dt class="">
+														<input type="text" name="scope" value="Клиент">
+													</dt>
+													<dd>
+														<div class="select-options">
+															<div class="scroll-cont scrollbar-inner">
+																<a data-value="10">10</a>
+																<a data-value="20" >20</a>
+																<a data-value="50" >50</a>
+																<a data-value="100" >100</a>
+																<a data-value="200" >200</a>
+															</div>
+														</div>
+													</dd>
+												</dl>
+											</div>
+											<div class="input-block">
+												<label for="input_5">Логин</label>
+												<input type="text" id="input_5" name="input_5" value="name@nma.com">
+											</div>
+											<div class="input-block disabled">
+												<label for="input_5">Пароль</label>
+												<input type="text" id="input_5" name="input_5" value="pass777">
+											</div>
+											<div class="select-block">
+												<label>Компания</label>
+												<dl class="select select-filter select-flag scrollable">
+													<dt class="">
+														<input type="text" name="scope" value="1231241_4912412">
+													</dt>
+													<dd>
+														<div class="select-options">
+															<div class="scroll-cont scrollbar-inner">
+																<a data-value="10">10</a>
+																<a data-value="20" >20</a>
+																<a data-value="50" >50</a>
+																<a data-value="100" >100</a>
+																<a data-value="200" >200</a>
+															</div>
+														</div>
+													</dd>
+												</dl>
+											</div>
+										</div>
+									</form>
+									<div class="base-popup__footer">
+										<button class="btn base-btn grey popup-btn__close" data-popup="setup-popup">Отмена</button>
+										<button class="btn base-btn">Сохранить</button>
+									</div>
+								</div>
+								<div class="base-tab__block" data-tabname="phone_book">
+									<div class="table-container">
+										<div class="table-body scrollbar-inner">
+											<table class="base-table">
+												<thead>
+													<tr>
+														<td>ID</td>
+														<td>Дата и время создания</td>
+														<td>Номер</td>
+														<td>Имя звонящего</td>
+														<td>Статус</td>
+														<td>Статус телефона</td>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>12</td>
+														<td>13.08.2018 15:04</td>
+														<td>35674-312-42</td>
+														<td>Name</td>
+														<td>активный</td>
+														<td>активный</td>
+													</tr>
+													<tr>
+														<td>12</td>
+														<td>13.08.2018 15:04</td>
+														<td>35674-312-42</td>
+														<td>Name</td>
+														<td>активный</td>
+														<td>активный</td>
+													</tr>
+													<tr>
+														<td>12</td>
+														<td>13.08.2018 15:04</td>
+														<td>35674-312-42</td>
+														<td>Name</td>
+														<td>активный</td>
+														<td>активный</td>
+													</tr>
+													<tr>
+														<td>12</td>
+														<td>13.08.2018 15:04</td>
+														<td>35674-312-42</td>
+														<td>Name</td>
+														<td>активный</td>
+														<td>активный</td>
+													</tr>
+													<tr>
+														<td>12</td>
+														<td>13.08.2018 15:04</td>
+														<td>35674-312-42</td>
+														<td>Name</td>
+														<td>активный</td>
+														<td>активный</td>
+													</tr>
+													<!--  -->
+													<!--  -->
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="base-popup__footer">
+										<button class="btn base-btn grey popup-btn__close" data-popup="setup-popup">Отмена</button>
+									</div>
+								</div>
+								<div class="base-tab__block" data-tabname="contacts">
+									<div class="table-container">
+										<div class="table-body scrollbar-inner">
+											<table class="base-table">
+												<thead>
+													<tr>
+														<td>ID</td>
+														<td>Дата и время создания</td>
+														<td>Номер</td>
+														<td>Имя звонящего</td>
+														<td>Статус</td>
+														<td>Статус телефона</td>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>12</td>
+														<td>13.08.2018 15:04</td>
+														<td>35674-312-42</td>
+														<td>Name</td>
+														<td>активный</td>
+														<td>активный</td>
+													</tr>
+													<tr>
+														<td>12</td>
+														<td>13.08.2018 15:04</td>
+														<td>35674-312-42</td>
+														<td>Name</td>
+														<td>активный</td>
+														<td>активный</td>
+													</tr>
+													<tr>
+														<td>12</td>
+														<td>13.08.2018 15:04</td>
+														<td>35674-312-42</td>
+														<td>Name</td>
+														<td>активный</td>
+														<td>активный</td>
+													</tr>
+													<tr>
+														<td>12</td>
+														<td>13.08.2018 15:04</td>
+														<td>35674-312-42</td>
+														<td>Name</td>
+														<td>активный</td>
+														<td>активный</td>
+													</tr>
+													<tr>
+														<td>12</td>
+														<td>13.08.2018 15:04</td>
+														<td>35674-312-42</td>
+														<td>Name</td>
+														<td>активный</td>
+														<td>активный</td>
+													</tr>
+													<!--  -->
+													<!--  -->
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="base-popup__footer">
+										<button class="btn base-btn grey popup-btn__close" data-popup="setup-popup">Отмена</button>
+									</div>
+								</div>
+								<div class="base-tab__block" data-tabname="parametrs">
+									<div class="table-container">
+										<div class="table-body scrollbar-inner">
+											<table class="base-table">
+												<thead>
+													<tr>
+														<td>ID</td>
+														<td>Дата и время создания</td>
+														<td>Номер</td>
+														<td>Имя звонящего</td>
+														<td>Статус</td>
+														<td>Статус телефона</td>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>12</td>
+														<td>13.08.2018 15:04</td>
+														<td>35674-312-42</td>
+														<td>Name</td>
+														<td>активный</td>
+														<td>активный</td>
+													</tr>
+													<tr>
+														<td>12</td>
+														<td>13.08.2018 15:04</td>
+														<td>35674-312-42</td>
+														<td>Name</td>
+														<td>активный</td>
+														<td>активный</td>
+													</tr>
+													<tr>
+														<td>12</td>
+														<td>13.08.2018 15:04</td>
+														<td>35674-312-42</td>
+														<td>Name</td>
+														<td>активный</td>
+														<td>активный</td>
+													</tr>
+													<tr>
+														<td>12</td>
+														<td>13.08.2018 15:04</td>
+														<td>35674-312-42</td>
+														<td>Name</td>
+														<td>активный</td>
+														<td>активный</td>
+													</tr>
+													<tr>
+														<td>12</td>
+														<td>13.08.2018 15:04</td>
+														<td>35674-312-42</td>
+														<td>Name</td>
+														<td>активный</td>
+														<td>активный</td>
+													</tr>
+													<!--  -->
+													<!--  -->
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="base-popup__footer">
+										<button class="btn base-btn grey popup-btn__close" data-popup="setup-popup">Отмена</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--  -->
+						
 					</div>
 				</div>
 				<!--  -->

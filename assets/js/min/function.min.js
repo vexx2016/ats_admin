@@ -378,11 +378,21 @@
 
               // popup open _btn
               $('.popup-btn__open').click(function() {
-                $('.base-popup').addClass('opened');
+                if($(this).attr("data-popup")){
+                  var attributeSelector = '.base-popup[data-popup="'+$(this).attr("data-popup")+'"]';
+                  $(attributeSelector).addClass('opened');
+                }else{
+                  $('.base-popup:not([data-popup])').addClass('opened');
+                }
               });
                // popup close _btn
               $('.popup-btn__close').click(function() {
-                $('.base-popup').removeClass('opened');
+                if($(this).attr("data-popup")){
+                  var attributeSelector = '.base-popup[data-popup="'+$(this).attr("data-popup")+'"]';
+                  $(attributeSelector).removeClass('opened');
+                }else{
+                  $('.base-popup:not([data-popup])').removeClass('opened');
+                }
               });
 
               // table sorting btn
@@ -414,7 +424,7 @@
                 $('.base-tab__block.active').removeClass('active')
                 $('.base-tab__btn.active').removeClass('active')
                 $(this).addClass('active')
-                $(this).parent().parent().find(tn).addClass('active')
+                $(this).closest('.base-popup').find(tn).addClass('active')
               });
 
 
