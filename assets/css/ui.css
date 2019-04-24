@@ -450,6 +450,74 @@ h1, h2, h3, h4, h5, h6 {
       padding: 12px 30px;
       font-size: 16px; }
 
+.base-toggle {
+  margin-bottom: 24px; }
+  .base-toggle.error .toggle-btn {
+    background: #f51d39; }
+  .base-toggle input[type=checkbox] {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    z-index: -10;
+    -webkit-appearance: checkbox !important; }
+    .base-toggle input[type=checkbox]:checked ~ label .toggle-btn {
+      background: #f18a17; }
+      .base-toggle input[type=checkbox]:checked ~ label .toggle-btn .o {
+        background: #fff;
+        -webkit-transform: translateY(-50%) translateX(15px);
+            -ms-transform: translateY(-50%) translateX(15px);
+                transform: translateY(-50%) translateX(15px); }
+  .base-toggle label {
+    cursor: pointer;
+    display: inline-block;
+    width: 100%; }
+  .base-toggle .txt {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 38px);
+    padding-left: 14px;
+    padding-right: 7%;
+    font-size: 15px;
+    line-height: 22px;
+    color: #0c0c0c;
+    margin-top: -2px; }
+    .base-toggle .txt a {
+      color: #f18a17;
+      -webkit-transition: 0.3s ease;
+      -o-transition: 0.3s ease;
+      transition: 0.3s ease;
+      border-bottom: solid 1px #f18a17; }
+      .base-toggle .txt a:hover {
+        border-color: transparent; }
+  .base-toggle .toggle-btn {
+    width: 36px;
+    height: 20px;
+    border: solid 1px #f18a17;
+    -webkit-border-radius: 50px;
+            border-radius: 50px;
+    display: inline-block;
+    vertical-align: top;
+    -webkit-transition: 0.6s ease;
+    -o-transition: 0.6s ease;
+    transition: 0.6s ease;
+    position: relative; }
+    .base-toggle .toggle-btn .o {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      background: #f18a17;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 3px;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+      -webkit-transition: 0.3s ease;
+      -o-transition: 0.3s ease;
+      transition: 0.3s ease; }
+
 .base-btn-select {
   position: relative; }
   .base-btn-select.active .list-wrap {

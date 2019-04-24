@@ -1,20 +1,20 @@
 <!doctype html>
 <html>
 <head>
-	<title>Dashboard — 1ATS</title>
+	<title>Список голосовых почт — 1ATS</title>
 	<meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="../../assets/favicon.ico" type="image/x-icon">
 
-<link rel="stylesheet" href="../assets/css/ui.css">
-<link rel="stylesheet" href="../assets/css/main.css">
+<link rel="stylesheet" href="../../assets/css/ui.css">
+<link rel="stylesheet" href="../../assets/css/main.css">
 
 
 
 <meta property="og:title" content="1ATS |"/>
 <meta property="og:type" content="website"/>
 <meta property="og:url" content=""/>
-<meta property="og:image" content="../assets/img/"/>
+<meta property="og:image" content="../../assets/img/"/>
 <meta property="og:site_name" content=""/>
 <meta property="og:description" content=""/>
 
@@ -27,6 +27,8 @@
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#f39616">
 <meta name="msapplication-TileColor" content="#151515">
 <meta name="theme-color" content="#151515">
+	<!-- <link rel="stylesheet" href="../../../../assets/css/user.css"> -->
+	<link rel="stylesheet" href="../../assets/css/users.css">
 </head>
 <body>
 	<main class="1ats__page">
@@ -34,7 +36,7 @@
 			<aside class="main-sidebar">
 	<div class="main-sidebar__header">
 		<div class="wrap">
-			<a href="index.html" class="logo">
+			<a href="../index.html" class="logo">
 				<?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -76,7 +78,7 @@
 			<div class="main-sidebar__profile">
 			<div class="profile-content">
 				<figure class="photo">
-					<img src="../assets/img/profile1.png" alt="">
+					<img src="../../assets/img/profile1.png" alt="">
 				</figure>
 				<div class="txt">
 					<div class="name">
@@ -121,10 +123,10 @@
 						</button>
 					</div>
 					<div class="navigation-list">
-						<a href="settings/ats-list.html" class="navigation-link">Список АТС</a>
-						<a href="settings/numbers.html" class="navigation-link">Внешние номера</a>
-						<a href="settings/regions.html" class="navigation-link">Коды регионов</a>
-						<a href="settings/servers.html" class="navigation-link">Сервера</a>
+						<a href="../settings/ats-list.html" class="navigation-link">Список АТС</a>
+						<a href="../settings/numbers.html" class="navigation-link">Внешние номера</a>
+						<a href="../settings/regions.html" class="navigation-link">Коды регионов</a>
+						<a href="../settings/servers.html" class="navigation-link">Сервера</a>
 					</div>
 				</div>
 				<div class="navigation-block">
@@ -141,9 +143,9 @@
 						</button>
 					</div>
 					<div class="navigation-list">
-						<a href="configuration/contacts.html" class="navigation-link">Контакты</a>
-						<a href="configuration/search-groups.html" class="navigation-link">Поисковые группы</a>
-						<a href="configuration/voice-mail-list.html" class="navigation-link">Список голосовых почт</a>
+						<a href="contacts.html" class="navigation-link">Контакты</a>
+						<a href="search-groups.html" class="navigation-link">Поисковые группы</a>
+						<a href="voice-mail-list.html" class="navigation-link">Список голосовых почт</a>
 						<a href="#" class="navigation-link">Конференции</a>
 						<a href="#" class="navigation-link">Факсы</a>
 						<a href="#" class="navigation-link">Очереди</a>
@@ -186,9 +188,9 @@
 						</button>
 					</div>
 					<div class="navigation-list">
-						<a href="users/companies.html" class="navigation-link">Компании</a>
-						<a href="users/users-list.html" class="navigation-link">Список пользователей</a>
-						<a href="users/admins.html" class="navigation-link">Администраторы</a>
+						<a href="../users/companies.html" class="navigation-link">Компании</a>
+						<a href="../users/users-list.html" class="navigation-link">Список пользователей</a>
+						<a href="../users/admins.html" class="navigation-link">Администраторы</a>
 					</div>
 				</div>
 				<div class="navigation-block">
@@ -309,233 +311,329 @@
 						</div>
 					</header>
 					<section class="main-container__body">
-						<div class="title">Dashboard</div>
-						<div class="row">
-							<div class="dashboard-card col-3 servers">
-								<div class="dashboard-card__header">
-									<div class="name">Сервера</div>
-									<div class="filters">
-										<button class="btn on base-tooltip" data-tooltip="Включен"></button>
-										<button class="btn off base-tooltip" data-tooltip="Выключен"></button>
-										<button class="btn inactive base-tooltip" data-tooltip="Неактивный"></button>
-									</div>
-								</div>
-								<div class="dashboard-card__body scrollbar-inner">
-									<div class="server-item">
-										<a href="#" class="server-link on"><span>test.1telecom.ru</span></a>
-										<span class="time">13.08.2018 15:04</span>
-									</div>
-									<div class="server-item">
-										<a href="#" class="server-link inactive"><span>10.1.0.2</span></a>
-										<span class="time">27.11.2018 12:57</span>
-									</div>
-									<div class="server-item">
-										<a href="#" class="server-link off"><span>sip.1vats.ru</span></a>
-										<span class="time">16.08.2018 17:51</span>
-									</div>
-									<div class="server-item">
-										<a href="#" class="server-link on"><span>test.1vats.ru</span></a>
-										<span class="time">19.08.2018 22:04</span>
-									</div>
-									<div class="server-item">
-										<a href="#" class="server-link on"><span>sip.1telecom.ru</span></a>
-										<span class="time">05.10.2018 10:39</span>
-									</div>
-									<div class="server-item">
-										<a href="#" class="server-link inactive"><span>10.2.2.0</span></a>
-										<span class="time">22.07.2018 15:13</span>
-									</div>
-									<div class="server-item">
-										<a href="#" class="server-link off"><span>sip.1vats.ru</span></a>
-										<span class="time">16.08.2018 17:51</span>
-									</div>
-									<div class="server-item">
-										<a href="#" class="server-link on"><span>test.1vats.ru</span></a>
-										<span class="time">19.08.2018 22:04</span>
-									</div>
-									<div class="server-item">
-										<a href="#" class="server-link on"><span>sip.1telecom.ru</span></a>
-										<span class="time">05.10.2018 10:39</span>
-									</div>
-									<div class="server-item">
-										<a href="#" class="server-link inactive"><span>10.2.2.0</span></a>
-										<span class="time">22.07.2018 15:13</span>
-									</div>
-								</div>
+						<div class="title">
+							<span class="over-title">Конфигурация АТС</span>
+							Список голосовых почт
+						</div>
+						<div class="page-filters">
+							<div class="icon">
+								<svg>
+									<use xlink:href="#filter"></use>
+								</svg>
 							</div>
-							<div class="dashboard-card col-3 processes">
-								<div class="dashboard-card__header">
-									<div class="name">Процессы</div>
+							<span class="page-filters__btn">Фильтры</span>
+							<!-- <button class="btn page-filters__btn">Показать фильтры</button> -->
+							<div class="inputs-row">
+								<div class="input-block id">
+									<input type="text" id="input_id" name="input_id" placeholder="ID">
 								</div>
-								<div class="dashboard-card__body scrollbar-inner">
-									<a href="#" class="process-item add">
-										<span class="icon">
-											<svg>
-												<use xlink:href="#plus_p"></use>
-											</svg>
-										</span>
-										<span class="txt">
-											Cоздан пользователь <i>user567</i>
-										</span>
-									</a>
-									<a href="#" class="process-item edit">
-										<span class="icon">
-											<svg>
-												<use xlink:href="#edit_p"></use>
-											</svg>
-										</span>
-										<span class="txt">
-											Изменен пароль и email пользователь <i>user567</i>
-										</span>
-									</a>
-									<a href="#" class="process-item delete">
-										<span class="icon">
-											<svg>
-												<use xlink:href="#remove_p"></use>
-											</svg>
-										</span>
-										<span class="txt">
-											Удален пользователь <i>user777</i>
-										</span>
-									</a>
-									<a href="#" class="process-item add">
-										<span class="icon">
-											<svg>
-												<use xlink:href="#plus_p"></use>
-											</svg>
-										</span>
-										<span class="txt">
-											Cоздан пользователь <i>user347</i>
-										</span>
-									</a>
-									<a href="#" class="process-item edit">
-										<span class="icon">
-											<svg>
-												<use xlink:href="#edit_p"></use>
-											</svg>
-										</span>
-										<span class="txt">
-											Изменен пароль и email пользователь <i>user567</i>
-										</span>
-									</a>
-									<a href="#" class="process-item delete">
-										<span class="icon">
-											<svg>
-												<use xlink:href="#remove_p"></use>
-											</svg>
-										</span>
-										<span class="txt">
-											Удален пользователь <i>user777</i>
-										</span>
-									</a>
-									<a href="#" class="process-item add">
-										<span class="icon">
-											<svg>
-												<use xlink:href="#plus_p"></use>
-											</svg>
-										</span>
-										<span class="txt">
-											Cоздан пользователь <i>user347</i>
-										</span>
-									</a>
+								<div class="input-block name">
+									<input type="text" id="input_name" name="input_name" placeholder="Номер">
 								</div>
-							</div>
-							<div class="dashboard-card col-3 actions">
-								<div class="dashboard-card__header">
-									<div class="name">Действия</div>
-									<div class="date">
-										<svg>
-											<use xlink:href="#time"></use>
-										</svg>
-										<span>23.01.19</span>
-									</div>
+								<div class="input-block name">
+									<input type="text" id="input_email" name="input_email" placeholder="E-mail">
 								</div>
-								<div class="dashboard-card__body">
-									<div class="row">
-										<div class="item">
-											<div class="num">23</div>
-											<div class="txt">аккаунта <br>Создано</div>
+								<dl class="select select-filter scrollable">
+									<dt class="">
+										<input type="text" name="scope" class="required" placeholder="Статус">
+									</dt>
+									<dd>
+										<div class="select-options">
+											<div class="scroll-cont scrollbar-inner">
+												<div class="base-checkbox">
+													<input type="checkbox" id="flt1" name="flt1" checked>
+													<label for="flt1">
+													<div class="check"></div>
+													<span>Активный</span>
+													</label>
+												</div>
+												<div class="base-checkbox">
+													<input type="checkbox" id="flt2" name="flt2">
+													<label for="flt2">
+													<div class="check"></div>
+													<span>Не активный</span>
+													</label>
+												</div>
+											</div>
 										</div>
-										<div class="item">
-											<div class="num">5</div>
-											<div class="txt">Активных <br>серверов</div>
-										</div>
-										<div class="item">
-											<div class="num">456</div>
-											<div class="txt">Активных <br>пользователей</div>
-										</div>
-									</div>
-									<!-- <div class="row">
-										<div class="item">
-											<div class="num">456</div>
-											<div class="txt">Активных <br>пользователей</div>
-										</div>
-									</div> -->
-									<!-- <img src="../../assets/img/actions.svg" alt="" class="img"> -->
-								</div>
+									</dd>
+								</dl>
+								<button class="btn base-btn ok-btn">OK</button>
 							</div>
 						</div>
-						<div class="row full">
-							<div class="dashboard-card col-1 status">
-								<div class="inner-block status__numbers">
-									<div class="row violet">
-										<div class="txt">
-											<div class="t">Member Profit</div>
-											<div class="s">Awerage Weekly Profit</div>
-										</div>
-										<div class="num">+$17,800</div>
+						<div class="table-container">
+							<div class="table-header">
+								<button class="btn base-btn popup-btn__open">
+									+ Добавить
+								</button>
+								<div class="base-pagination">
+									<div class="page-count">
+										<span>показать</span>
+										<dl class="select select-filter select-flag scrollable fill">
+											<dt class="">
+												<input type="text" name="scope" class="required" value="10">
+											</dt>
+											<dd>
+												<div class="select-options">
+													<div class="scroll-cont scrollbar-inner">
+														<a data-value="10">10</a>
+														<a data-value="20" >20</a>
+														<a data-value="50" >50</a>
+														<a data-value="100" >100</a>
+														<a data-value="200" >200</a>
+													</div>
+												</div>
+											</dd>
+										</dl>
 									</div>
-									<div class="row red">
-										<div class="txt">
-											<div class="t">Orders</div>
-											<div class="s">Weekly Customer Orders</div>
-										</div>
-										<div class="num">+1,800</div>
-									</div>
-									<div class="row green">
-										<div class="txt">
-											<div class="t">Issue Reports</div>
-											<div class="s">System bugs and issues</div>
-										</div>
-										<div class="num">-27,49%</div>
-									</div>
-								</div>
-								<div class="inner-block status__chart">
-									<div class="lft">
-										<div class="name">Aктивная аудитория</div>
-										<div class="info">Количество пользователей сервиса</div>
-										<img src="../assets/img/graph.png" alt="">
-									</div>
-									<div class="rght">
-										<div class="filters">
-											<button class="btn base-btn_outline small active">
-												день
-											</button>
-											<button class="btn base-btn_outline small">
-												неделя
-											</button>
-											<button class="btn base-btn_outline small">
-												месяц
-											</button>
-										</div>
-										<div class="controls">
-											<button class="btn base-btn_outline small prev">
-												<svg>
-													<use xlink:href="#next"></use>
-												</svg>
-											</button>
-											<button class="btn base-btn_outline small next">
-												<svg>
-													<use xlink:href="#next"></use>
-												</svg>
-											</button>
-										</div>
+									<div class="page-btns">
+										<button class="btn prev">
+											Пред.
+										</button>
+										<button class="btn num active">1</button>
+										<button class="btn num">2</button>
+										<button class="btn num">3</button>
+										<button class="btn num">4</button>
+										<button class="btn num">...</button>
+										<button class="btn num">78</button>
+										<button class="btn next">
+											След.
+										</button>
 									</div>
 								</div>
-								<div class="inner-block status__diagram">
-									<div class="name">Статистика звонков</div>
-									<img src="../assets/img/diagram2.png" alt="">
-								</div>
+							</div>
+							<div class="table-body scrollbar-inner">
+								<table class="base-table">
+									<thead>
+										<tr>
+											<td>ID</td>
+											<td>Дата и время создания</td>
+											<td>Номер</td>
+											<td>E-mail</td>
+											<td>Статус</td>
+											<td></td>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>12</td>
+											<td>13.08.2018 15:04</td>
+											<td>35674-312-42</td>
+											<td>name@nm.cc</td>
+											<td>активный</td>
+											<td>
+												<button class="btn table-action-btn show"><svg>
+													<use xlink:href="#eye"></use>
+												</svg></button>
+												<button class="btn table-action-btn edit"><svg>
+													<use xlink:href="#edit"></use>
+												</svg></button>
+												<button class="btn table-action-btn delete"><svg>
+													<use xlink:href="#remove"></use>
+												</svg></button>
+											</td>
+										</tr>
+										<tr>
+											<td>01</td>
+											<td>03.08.2018 15:04</td>
+											<td>136178-132-11</td>
+											<td>sur@sr.tt</td>
+											<td>активный</td>
+											<td>
+												<button class="btn table-action-btn show"><svg>
+													<use xlink:href="#eye"></use>
+												</svg></button>
+												<button class="btn table-action-btn edit"><svg>
+													<use xlink:href="#edit"></use>
+												</svg></button>
+												<button class="btn table-action-btn delete"><svg>
+													<use xlink:href="#remove"></use>
+												</svg></button>
+											</td>
+										</tr>
+										<tr>
+											<td>12</td>
+											<td>13.08.2018 15:04</td>
+											<td>35674-312-42</td>
+											<td>name@nm.cc</td>
+											<td>активный</td>
+											<td>
+												<button class="btn table-action-btn show"><svg>
+													<use xlink:href="#eye"></use>
+												</svg></button>
+												<button class="btn table-action-btn edit"><svg>
+													<use xlink:href="#edit"></use>
+												</svg></button>
+												<button class="btn table-action-btn delete"><svg>
+													<use xlink:href="#remove"></use>
+												</svg></button>
+											</td>
+										</tr>
+										<tr>
+											<td>01</td>
+											<td>03.08.2018 15:04</td>
+											<td>136178-132-11</td>
+											<td>sur@sr.tt</td>
+											<td>активный</td>
+											<td>
+												<button class="btn table-action-btn show"><svg>
+													<use xlink:href="#eye"></use>
+												</svg></button>
+												<button class="btn table-action-btn edit"><svg>
+													<use xlink:href="#edit"></use>
+												</svg></button>
+												<button class="btn table-action-btn delete"><svg>
+													<use xlink:href="#remove"></use>
+												</svg></button>
+											</td>
+										</tr>
+										<tr>
+											<td>12</td>
+											<td>13.08.2018 15:04</td>
+											<td>35674-312-42</td>
+											<td>name@nm.cc</td>
+											<td>активный</td>
+											<td>
+												<button class="btn table-action-btn show"><svg>
+													<use xlink:href="#eye"></use>
+												</svg></button>
+												<button class="btn table-action-btn edit"><svg>
+													<use xlink:href="#edit"></use>
+												</svg></button>
+												<button class="btn table-action-btn delete"><svg>
+													<use xlink:href="#remove"></use>
+												</svg></button>
+											</td>
+										</tr>
+										<tr>
+											<td>01</td>
+											<td>03.08.2018 15:04</td>
+											<td>136178-132-11</td>
+											<td>sur@sr.tt</td>
+											<td>активный</td>
+											<td>
+												<button class="btn table-action-btn show"><svg>
+													<use xlink:href="#eye"></use>
+												</svg></button>
+												<button class="btn table-action-btn edit"><svg>
+													<use xlink:href="#edit"></use>
+												</svg></button>
+												<button class="btn table-action-btn delete"><svg>
+													<use xlink:href="#remove"></use>
+												</svg></button>
+											</td>
+										</tr>
+										<tr>
+											<td>12</td>
+											<td>13.08.2018 15:04</td>
+											<td>35674-312-42</td>
+											<td>name@nm.cc</td>
+											<td>активный</td>
+											<td>
+												<button class="btn table-action-btn show"><svg>
+													<use xlink:href="#eye"></use>
+												</svg></button>
+												<button class="btn table-action-btn edit"><svg>
+													<use xlink:href="#edit"></use>
+												</svg></button>
+												<button class="btn table-action-btn delete"><svg>
+													<use xlink:href="#remove"></use>
+												</svg></button>
+											</td>
+										</tr>
+										<tr>
+											<td>01</td>
+											<td>03.08.2018 15:04</td>
+											<td>136178-132-11</td>
+											<td>sur@sr.tt</td>
+											<td>активный</td>
+											<td>
+												<button class="btn table-action-btn show"><svg>
+													<use xlink:href="#eye"></use>
+												</svg></button>
+												<button class="btn table-action-btn edit"><svg>
+													<use xlink:href="#edit"></use>
+												</svg></button>
+												<button class="btn table-action-btn delete"><svg>
+													<use xlink:href="#remove"></use>
+												</svg></button>
+											</td>
+										</tr>
+										<tr>
+											<td>12</td>
+											<td>13.08.2018 15:04</td>
+											<td>35674-312-42</td>
+											<td>name@nm.cc</td>
+											<td>активный</td>
+											<td>
+												<button class="btn table-action-btn show"><svg>
+													<use xlink:href="#eye"></use>
+												</svg></button>
+												<button class="btn table-action-btn edit"><svg>
+													<use xlink:href="#edit"></use>
+												</svg></button>
+												<button class="btn table-action-btn delete"><svg>
+													<use xlink:href="#remove"></use>
+												</svg></button>
+											</td>
+										</tr>
+										<tr>
+											<td>01</td>
+											<td>03.08.2018 15:04</td>
+											<td>136178-132-11</td>
+											<td>sur@sr.tt</td>
+											<td>активный</td>
+											<td>
+												<button class="btn table-action-btn show"><svg>
+													<use xlink:href="#eye"></use>
+												</svg></button>
+												<button class="btn table-action-btn edit"><svg>
+													<use xlink:href="#edit"></use>
+												</svg></button>
+												<button class="btn table-action-btn delete"><svg>
+													<use xlink:href="#remove"></use>
+												</svg></button>
+											</td>
+										</tr>
+										<tr>
+											<td>12</td>
+											<td>13.08.2018 15:04</td>
+											<td>35674-312-42</td>
+											<td>name@nm.cc</td>
+											<td>активный</td>
+											<td>
+												<button class="btn table-action-btn show"><svg>
+													<use xlink:href="#eye"></use>
+												</svg></button>
+												<button class="btn table-action-btn edit"><svg>
+													<use xlink:href="#edit"></use>
+												</svg></button>
+												<button class="btn table-action-btn delete"><svg>
+													<use xlink:href="#remove"></use>
+												</svg></button>
+											</td>
+										</tr>
+										<tr>
+											<td>01</td>
+											<td>03.08.2018 15:04</td>
+											<td>136178-132-11</td>
+											<td>sur@sr.tt</td>
+											<td>активный</td>
+											<td>
+												<button class="btn table-action-btn show"><svg>
+													<use xlink:href="#eye"></use>
+												</svg></button>
+												<button class="btn table-action-btn edit"><svg>
+													<use xlink:href="#edit"></use>
+												</svg></button>
+												<button class="btn table-action-btn delete"><svg>
+													<use xlink:href="#remove"></use>
+												</svg></button>
+											</td>
+										</tr>
+										<!--  -->
+									</tbody>
+								</table>
 							</div>
 						</div>
 						<div class="row">
@@ -655,310 +753,56 @@
 									<div class="name">Поддержка</div>
 								</div>
 								<div class="dashboard-card__body">
-									<img src="../assets/img/support.png" alt="">
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="dashboard-card col-4 logs">
-								<div class="dashboard-card__header">
-									<div class="name">Logs</div>
-								</div>
-								<div class="dashboard-card__body scrollbar-inner">
-									<div class="log-item">
-										<div class="time">15:04</div>
-										<div class="txt">System error - Check</div>
-									</div>
-									<div class="log-item">
-										<div class="time">14:59</div>
-										<div class="txt">DB overloaded 80%</div>
-									</div>
-									<div class="log-item">
-										<div class="time">14:54</div>
-										<div class="txt">New invoice received </div>
-									</div>
-									<div class="log-item">
-										<div class="time">14:32</div>
-										<div class="txt">12 new users registered </div>
-									</div>
-									<div class="log-item">
-										<div class="time">14:21</div>
-										<div class="txt">New invoice received</div>
-									</div>
-									<div class="log-item">
-										<div class="time">15:04</div>
-										<div class="txt">System error - Check</div>
-									</div>
-									<div class="log-item">
-										<div class="time">14:59</div>
-										<div class="txt">DB overloaded 80%</div>
-									</div>
-									<div class="log-item">
-										<div class="time">14:54</div>
-										<div class="txt">New invoice received </div>
-									</div>
-									<div class="log-item">
-										<div class="time">14:32</div>
-										<div class="txt">12 new users registered </div>
-									</div>
-									<div class="log-item">
-										<div class="time">14:21</div>
-										<div class="txt">New invoice received</div>
-									</div>
-									<div class="log-item">
-										<div class="time">15:04</div>
-										<div class="txt">System error - Check</div>
-									</div>
-									<div class="log-item">
-										<div class="time">14:59</div>
-										<div class="txt">DB overloaded 80%</div>
-									</div>
-									<div class="log-item">
-										<div class="time">14:54</div>
-										<div class="txt">New invoice received </div>
-									</div>
-									<div class="log-item">
-										<div class="time">14:32</div>
-										<div class="txt">12 new users registered </div>
-									</div>
-									<div class="log-item">
-										<div class="time">14:21</div>
-										<div class="txt">New invoice received</div>
-									</div>
-								</div>
-							</div>
-							<div class="dashboard-card col-6 table">
-								<div class="dashboard-card__header">
-									<div class="name">АТС</div>
-									<div class="base-btn-select right">
-										<button class="btn base-btn_outline small base-btn-select_btn">
-											выбрать
-										</button>
-										<div class="list-wrap">
-											<div class="list">
-												<div class="row">
-													<div class="base-checkbox">
-									                    <input type="checkbox" id="flt1" name="flt1">
-									                    <label for="flt1">
-									                      <div class="check"></div>
-									                      <span>Активные</span>
-									                    </label>
-										            </div>
-										        </div>
-										        <div class="row">
-													<div class="base-checkbox">
-									                    <input type="checkbox" id="flt2" name="flt2">
-									                    <label for="flt2">
-									                      <div class="check"></div>
-									                      <span>Заблокированые</span>
-									                    </label>
-										            </div>
-										        </div>
-										        <div class="row">
-													<div class="base-checkbox">
-									                    <input type="checkbox" id="flt3" name="flt3">
-									                    <label for="flt3">
-									                      <div class="check"></div>
-									                      <span>С отрицательными балансом</span>
-									                    </label>
-										            </div>
-										        </div>
-										        <div class="row">
-													<div class="base-checkbox">
-									                    <input type="checkbox" id="flt4" name="flt4">
-									                    <label for="flt4">
-									                      <div class="check"></div>
-									                      <span>Неактивные более 90 дней</span>
-									                    </label>
-										            </div>
-										        </div>
-										        <div class="row">
-													<div class="base-checkbox">
-									                    <input type="checkbox" id="flt5" name="flt5">
-									                    <label for="flt5">
-									                      <div class="check"></div>
-									                      <span>С 1 номером</span>
-									                    </label>
-										            </div>
-										        </div>
-										        <div class="row">
-													<div class="base-checkbox">
-									                    <input type="checkbox" id="flt6" name="flt6">
-									                    <label for="flt6">
-									                      <div class="check"></div>
-									                      <span>С 10 номерами</span>
-									                    </label>
-										            </div>
-										        </div>
-										        <div class="row">
-													<div class="base-checkbox">
-									                    <input type="checkbox" id="flt7" name="flt7">
-									                    <label for="flt7">
-									                      <div class="check"></div>
-									                      <span>Без заполненных обязательных данных</span>
-									                    </label>
-										            </div>
-										        </div>
-										        <div class="row">
-													<div class="base-checkbox">
-									                    <input type="checkbox" id="flt8" name="flt8">
-									                    <label for="flt8">
-									                      <div class="check"></div>
-									                      <span>На тестовом периоде</span>
-									                    </label>
-										            </div>
-										        </div>
-											</div>
-										</div>
-									</div>
-									
-								</div>
-								<div class="dashboard-card__body scrollbar-inner">
-									<table class="base-table">
-										<thead>
-											<tr>
-												<td>
-													<div class="base-checkbox">
-									                    <input type="checkbox" id="ch1" name="ch1">
-									                    <label for="ch1">
-									                      <div class="check"></div>
-									                    </label>
-									                </div>
-												</td>
-												<td>Номер</td>
-												<td>Название</td>
-												<td>Дата</td>
-												<td>Статус</td>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>
-													<div class="base-checkbox">
-									                    <input type="checkbox" id="ch2" name="ch2">
-									                    <label for="ch2">
-									                      <div class="check"></div>
-									                    </label>
-									                </div>
-									            </td>
-												<td>0007-41420007-4142</td>
-												<td>Kessler</td>
-												<td>11/28/2017</td>
-												<td><span style="color: #1ce158">Success</span></td>
-											</tr>
-											<tr>
-												<td>
-													<div class="base-checkbox">
-									                    <input type="checkbox" id="ch3" name="ch3">
-									                    <label for="ch3">
-									                      <div class="check"></div>
-									                    </label>
-									                </div>
-									            </td>
-												<td>0007-41420007-4142</td>
-												<td>Kessler</td>
-												<td>11/28/2017</td>
-												<td><span style="color: #416dfe">Pending</span></td>
-											</tr>
-											<tr>
-												<td>
-													<div class="base-checkbox">
-									                    <input type="checkbox" id="ch4" name="ch4">
-									                    <label for="ch4">
-									                      <div class="check"></div>
-									                    </label>
-									                </div>
-									            </td>
-												<td>0007-41420007-4142</td>
-												<td>Kessler</td>
-												<td>11/28/2017</td>
-												<td><span style="color: #ec3333">Danger</span></td>
-											</tr>
-											<tr>
-												<td>
-													<div class="base-checkbox">
-									                    <input type="checkbox" id="ch5" name="ch5">
-									                    <label for="ch5">
-									                      <div class="check"></div>
-									                    </label>
-									                </div>
-									            </td>
-												<td>0007-41420007-4142</td>
-												<td>Kessler</td>
-												<td>11/28/2017</td>
-												<td><span style="color: #1ce158">Success</span></td>
-											</tr>
-											<tr>
-												<td>
-													<div class="base-checkbox">
-									                    <input type="checkbox" id="ch6" name="ch6">
-									                    <label for="ch6">
-									                      <div class="check"></div>
-									                    </label>
-									                </div>
-									            </td>
-												<td>0007-41420007-4142</td>
-												<td>Kessler</td>
-												<td>11/28/2017</td>
-												<td><span style="color: #416dfe">Pending</span></td>
-											</tr>
-											<tr>
-												<td>
-													<div class="base-checkbox">
-									                    <input type="checkbox" id="ch7" name="ch7">
-									                    <label for="ch7">
-									                      <div class="check"></div>
-									                    </label>
-									                </div>
-									            </td>
-												<td>0007-41420007-4142</td>
-												<td>Kessler</td>
-												<td>11/28/2017</td>
-												<td><span style="color: #1ce158">Success</span></td>
-											</tr>
-											<tr>
-												<td>
-													<div class="base-checkbox">
-									                    <input type="checkbox" id="ch8" name="ch8">
-									                    <label for="ch8">
-									                      <div class="check"></div>
-									                    </label>
-									                </div>
-									            </td>
-												<td>0007-41420007-4142</td>
-												<td>Kessler</td>
-												<td>11/28/2017</td>
-												<td><span style="color: #1ce158">Success</span></td>
-											</tr>
-											<tr>
-												<td>
-													<div class="base-checkbox">
-									                    <input type="checkbox" id="ch9" name="ch9">
-									                    <label for="ch9">
-									                      <div class="check"></div>
-									                    </label>
-									                </div>
-									            </td>
-												<td>0007-41420007-4142</td>
-												<td>Kessler</td>
-												<td>11/28/2017</td>
-												<td><span style="color: #1ce158">Success</span></td>
-											</tr>
-										</tbody>
-									</table>
-
-									<!-- <div class="base-checkbox">
-					                    <input type="checkbox" id="digest" name="digest" v-on:change='digestFilter' checked required>
-					                    <label for="digest">
-					                      <div class="check"></div>
-					                      <span>дайджести</span>
-					                    </label>
-					                </div> -->
+									<img src="../../assets/img/support.png" alt="">
 								</div>
 							</div>
 						</div>
 					</section>
 				</div>
+				<!--  -->
+				<div class="base-popup">
+					<div class="base-popup__container" style="max-width: 400px;">
+						<div class="base-popup__title">Создать</div>
+						<form action="">
+							<div class="col" style="width: 100%;">
+								<div class="input-block required">
+									<label for="input_1">Номер</label>
+									<input type="text" id="input_1" name="input_1">
+								</div>
+								<div class="input-block required">
+									<label for="input_2">Пароль</label>
+									<input type="text" id="input_2" name="input_2">
+								</div>
+								<div class="input-block">
+									<label for="input_21">E-mail</label>
+									<input type="text" id="input_21" name="input_21">
+								</div>
+								<div class="select-block required">
+									<label>Статус</label>
+									<dl class="select select-filter select-flag scrollable">
+										<dt class="">
+											<input type="text" name="scope" class="required">
+										</dt>
+										<dd>
+											<div class="select-options">
+												<div class="scroll-cont scrollbar-inner">
+													<a data-value="10">Активный</a>
+													<a data-value="20" >Не активный</a>
+												</div>
+											</div>
+										</dd>
+									</dl>
+								</div>
+							</div>
+						</form>
+						<div class="base-popup__footer">
+							<button class="btn base-btn grey popup-btn__close">Отмена</button>
+							<button class="btn base-btn">Создать</button>
+						</div>
+					</div>
+				</div>
+				<!--  -->
+				<!--  -->
 			</div>
 		</div>
 	</main>
@@ -983,10 +827,10 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
 
-<script src="../assets/js/jquery.validate.min.js"></script>
-<script src="../assets/js/slick.min.js"></script>
-<script src="../assets/js/jquery.scrollbar.min.js"></script>
-<script src="../assets/js/function.js"></script>
+<script src="../../assets/js/jquery.validate.min.js"></script>
+<script src="../../assets/js/slick.min.js"></script>
+<script src="../../assets/js/jquery.scrollbar.min.js"></script>
+<script src="../../assets/js/function.js"></script>
 
 
 
