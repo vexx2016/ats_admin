@@ -544,6 +544,14 @@ body {
 
 .table-body {
   width: 100%; }
+  .table-body .table-action.media .table-action-btn {
+    margin-left: 20px;
+    font-size: 0; }
+    .table-body .table-action.media .table-action-btn.delete svg {
+      fill: #ff4242; }
+    .table-body .table-action.media .table-action-btn svg {
+      width: 20px;
+      height: 20px; }
   .table-body .table-action-btn {
     display: inline-block;
     vertical-align: middle;
@@ -565,7 +573,7 @@ body {
       .table-body .table-action-btn.edit svg {
         width: 16px;
         height: 16px; }
-    .table-body .table-action-btn.delete svg {
+    .table-body .table-action-btn.play svg, .table-body .table-action-btn.download svg, .table-body .table-action-btn.delete svg {
       width: 16px;
       height: 16px; }
     .table-body .table-action-btn svg {

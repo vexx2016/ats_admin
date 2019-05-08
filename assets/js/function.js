@@ -375,6 +375,9 @@
                 $(this).parent().toggleClass('active');
               });
 
+              // input mask 
+              // $(".datetime-mask").mask("00/00/0000 00:00", {placeholder: "__/__/____ --:--"});
+
 
               // popup open _btn
               $('.popup-btn__open').click(function() {
