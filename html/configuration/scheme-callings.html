@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-	<title>Записанные разговоры — 1ATS</title>
+	<title>Схемы звонков — 1ATS</title>
 	<meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="shortcut icon" href="../../assets/favicon.ico" type="image/x-icon">
@@ -27,7 +27,8 @@
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#f39616">
 <meta name="msapplication-TileColor" content="#151515">
 <meta name="theme-color" content="#151515">
-	<link rel="stylesheet" href="../../assets/css/settings.css">
+	<!-- <link rel="stylesheet" href="../../../../assets/css/user.css"> -->
+	<link rel="stylesheet" href="../../assets/css/users.css">
 </head>
 <body>
 	<main class="1ats__page">
@@ -142,15 +143,15 @@
 						</button>
 					</div>
 					<div class="navigation-list">
-						<a href="../configuration/contacts.html" class="navigation-link">Контакты</a>
-						<a href="../configuration/search-groups.html" class="navigation-link">Поисковые группы</a>
-						<a href="../configuration/voice-mail-list.html" class="navigation-link">Список голосовых почт</a>
-						<a href="../configuration/conferences.html" class="navigation-link">Конференции</a>
-						<a href="../configuration/fax.html" class="navigation-link">Факсы</a>
-						<a href="../configuration/queues.html" class="navigation-link">Очереди</a>
-						<a href="../configuration/voice-menu-list.html" class="navigation-link">Список голосовых меню</a>
-						<a href="../configuration/music-files.html" class="navigation-link">Музыкальные файлы</a>
-						<a href="../configuration/scheme-callings.html" class="navigation-link">Схемы звонков</a>
+						<a href="contacts.html" class="navigation-link">Контакты</a>
+						<a href="search-groups.html" class="navigation-link">Поисковые группы</a>
+						<a href="voice-mail-list.html" class="navigation-link">Список голосовых почт</a>
+						<a href="conferences.html" class="navigation-link">Конференции</a>
+						<a href="fax.html" class="navigation-link">Факсы</a>
+						<a href="queues.html" class="navigation-link">Очереди</a>
+						<a href="voice-menu-list.html" class="navigation-link">Список голосовых меню</a>
+						<a href="music-files.html" class="navigation-link">Музыкальные файлы</a>
+						<a href="scheme-callings.html" class="navigation-link">Схемы звонков</a>
 					</div>
 				</div>
 				<div class="navigation-block">
@@ -168,8 +169,8 @@
 					</div>
 					<div class="navigation-list">
 						<a href="#" class="navigation-link">Информация о звонках</a>
-						<a href="status-sip.html" class="navigation-link">Статусы SIP-пиров</a>
-						<a href="records.html" class="navigation-link">Записанные разговоры</a>
+						<a href="../data-ats/status-sip.html" class="navigation-link">Статусы SIP-пиров</a>
+						<a href="../data-ats/records.html" class="navigation-link">Записанные разговоры</a>
 					</div>
 				</div>
 				<div class="navigation-block">
@@ -310,8 +311,8 @@
 					</header>
 					<section class="main-container__body">
 						<div class="title">
-							<span class="over-title">Данные АТС</span>
-							Записанные разговоры
+							<span class="over-title">Конфигурация АТС</span>
+							Схемы звонков
 						</div>
 						<div class="page-filters">
 							<div class="icon">
@@ -322,17 +323,70 @@
 							<span class="page-filters__btn">Фильтры</span>
 							<!-- <button class="btn page-filters__btn">Показать фильтры</button> -->
 							<div class="inputs-row">
-								<div class="input-block">
-									<input type="text" id="input_1" name="input_1" placeholder="ID">
+								<div class="input-block id">
+									<input type="text" id="input_id" name="input_id" placeholder="ID">
 								</div>
-								<div class="input-block">
-									<input type="text" id="input_2" name="input_2" placeholder="Название">
+								<div class="input-block name">
+									<input type="text" id="input_name" name="input_name" placeholder="Название">
 								</div>
+								<dl class="select select-filter scrollable">
+									<dt class="">
+										<input type="text" name="scope" class="required" placeholder="Тип схемы звонка">
+									</dt>
+									<dd>
+										<div class="select-options">
+											<div class="scroll-cont scrollbar-inner">
+												<div class="base-checkbox">
+													<input type="checkbox" id="flt1" name="flt1" checked>
+													<label for="flt1">
+													<div class="check"></div>
+													<span>Вариант 1</span>
+													</label>
+												</div>
+												<div class="base-checkbox">
+													<input type="checkbox" id="flt2" name="flt2">
+													<label for="flt2">
+													<div class="check"></div>
+													<span>Вариант 2</span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</dd>
+								</dl>
+								<dl class="select select-filter scrollable">
+									<dt class="">
+										<input type="text" name="scope" class="required" placeholder="Активность">
+									</dt>
+									<dd>
+										<div class="select-options">
+											<div class="scroll-cont scrollbar-inner">
+												<div class="base-checkbox">
+													<input type="checkbox" id="flt11" name="flt11" checked>
+													<label for="flt11">
+													<div class="check"></div>
+													<span>Вариант 1</span>
+													</label>
+												</div>
+												<div class="base-checkbox">
+													<input type="checkbox" id="flt22" name="flt22">
+													<label for="flt22">
+													<div class="check"></div>
+													<span>Вариант 2</span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</dd>
+								</dl>
 								<button class="btn base-btn ok-btn">OK</button>
 							</div>
 						</div>
 						<div class="table-container">
 							<div class="table-header">
+								<button class="btn base-btn popup-btn__open">
+									+ Добавить
+								</button>
 								<div class="base-pagination">
 									<div class="page-count">
 										<span>показать</span>
@@ -373,215 +427,217 @@
 								<table class="base-table">
 									<thead>
 										<tr>
-											<td>
-												<span>ID</span>
-												<button class="btn table-sorting__btn">
-													<svg x="0px" y="0px" viewBox="0 0 384 384">
-													<g>
-														<polygon class="up" points="128,0 42.7,85.1 106.7,85.1 106.7,234.7 149.3,234.7 149.3,85.1 213.3,85.1 		"/>
-														<polygon class="down" points="277.3,298.9 277.3,149.3 234.7,149.3 234.7,298.9 170.7,298.9 256,384 341.3,298.9 		"/>
-													</g>
-													</svg>
-												</button>
-											</td>
-											<td>
-												<span>Название</span>
-												<button class="btn table-sorting__btn up">
-													<svg x="0px" y="0px" viewBox="0 0 384 384">
-													<g>
-														<polygon class="up" points="128,0 42.7,85.1 106.7,85.1 106.7,234.7 149.3,234.7 149.3,85.1 213.3,85.1 		"/>
-														<polygon class="down" points="277.3,298.9 277.3,149.3 234.7,149.3 234.7,298.9 170.7,298.9 256,384 341.3,298.9 		"/>
-													</g>
-													</svg>
-												</button>
-											</td>
-											
-											<td>Файл</td>
+											<td>ID</td>
+											<td>Дата и время создания</td>
+											<td>Название</td>
+											<td>Тип схемы звонка</td>
+											<td>Последнее изменение</td>
+											<td>Кем изменено</td>
+											<td>Активная</td>
 											<td></td>
 										</tr>
 									</thead>
 									<tbody>
 										<tr>
-											<td>14212413</td>
-											<td>Record: 28.08.2018 11:25:44</td>
-											<td>2018-08-28-1241412431-312312-11-25-44.mp3</td>
+											<td>3377</td>
+											<td>7.12.2018 14:34</td>
+											<td>callschema.newSchema</td>
+											<td>Входящая</td>
+											<td>7.12.2018 14:34</td>
+											<td>382741394731</td>
+											<td>Да</td>
 											<td>
-												<div class="table-action media">
-													<button class="btn table-action-btn play"><svg>
-														<use xlink:href="#play"></use>
-													</svg></button>
-													<button class="btn table-action-btn download"><svg>
-														<use xlink:href="#download"></use>
-													</svg></button>
-													<button class="btn table-action-btn delete"><svg>
-														<use xlink:href="#remove"></use>
-													</svg></button>
-												</div>
+												<button class="btn table-action-btn show popup-btn__open" data-popup="view-popup"><svg>
+													<use xlink:href="#eye"></use>
+												</svg></button>
+												<button class="btn table-action-btn edit"><svg>
+													<use xlink:href="#edit"></use>
+												</svg></button>
+												<button class="btn table-action-btn delete"><svg>
+													<use xlink:href="#remove"></use>
+												</svg></button>
 											</td>
 										</tr>
 										<tr>
-											<td>14212413</td>
-											<td>Record: 28.08.2018 11:25:44</td>
-											<td>2018-08-28-1241412431-312312-11-25-44.mp3</td>
+											<td>3377</td>
+											<td>7.12.2018 14:34</td>
+											<td>callschema.newSchema</td>
+											<td>Входящая</td>
+											<td>7.12.2018 14:34</td>
+											<td>382741394731</td>
+											<td>Да</td>
 											<td>
-												<div class="table-action media">
-													<button class="btn table-action-btn play"><svg>
-														<use xlink:href="#play"></use>
-													</svg></button>
-													<button class="btn table-action-btn download"><svg>
-														<use xlink:href="#download"></use>
-													</svg></button>
-													<button class="btn table-action-btn delete"><svg>
-														<use xlink:href="#remove"></use>
-													</svg></button>
-												</div>
+												<button class="btn table-action-btn show popup-btn__open" data-popup="view-popup"><svg>
+													<use xlink:href="#eye"></use>
+												</svg></button>
+												<button class="btn table-action-btn edit"><svg>
+													<use xlink:href="#edit"></use>
+												</svg></button>
+												<button class="btn table-action-btn delete"><svg>
+													<use xlink:href="#remove"></use>
+												</svg></button>
 											</td>
 										</tr>
 										<tr>
-											<td>14212413</td>
-											<td>Record: 28.08.2018 11:25:44</td>
-											<td>2018-08-28-1241412431-312312-11-25-44.mp3</td>
+											<td>3377</td>
+											<td>7.12.2018 14:34</td>
+											<td>callschema.newSchema</td>
+											<td>Входящая</td>
+											<td>7.12.2018 14:34</td>
+											<td>382741394731</td>
+											<td>Да</td>
 											<td>
-												<div class="table-action media">
-													<button class="btn table-action-btn play"><svg>
-														<use xlink:href="#play"></use>
-													</svg></button>
-													<button class="btn table-action-btn download"><svg>
-														<use xlink:href="#download"></use>
-													</svg></button>
-													<button class="btn table-action-btn delete"><svg>
-														<use xlink:href="#remove"></use>
-													</svg></button>
-												</div>
+												<button class="btn table-action-btn show popup-btn__open" data-popup="view-popup"><svg>
+													<use xlink:href="#eye"></use>
+												</svg></button>
+												<button class="btn table-action-btn edit"><svg>
+													<use xlink:href="#edit"></use>
+												</svg></button>
+												<button class="btn table-action-btn delete"><svg>
+													<use xlink:href="#remove"></use>
+												</svg></button>
 											</td>
 										</tr>
 										<tr>
-											<td>14212413</td>
-											<td>Record: 28.08.2018 11:25:44</td>
-											<td>2018-08-28-1241412431-312312-11-25-44.mp3</td>
+											<td>3377</td>
+											<td>7.12.2018 14:34</td>
+											<td>callschema.newSchema</td>
+											<td>Входящая</td>
+											<td>7.12.2018 14:34</td>
+											<td>382741394731</td>
+											<td>Да</td>
 											<td>
-												<div class="table-action media">
-													<button class="btn table-action-btn play"><svg>
-														<use xlink:href="#play"></use>
-													</svg></button>
-													<button class="btn table-action-btn download"><svg>
-														<use xlink:href="#download"></use>
-													</svg></button>
-													<button class="btn table-action-btn delete"><svg>
-														<use xlink:href="#remove"></use>
-													</svg></button>
-												</div>
+												<button class="btn table-action-btn show popup-btn__open" data-popup="view-popup"><svg>
+													<use xlink:href="#eye"></use>
+												</svg></button>
+												<button class="btn table-action-btn edit"><svg>
+													<use xlink:href="#edit"></use>
+												</svg></button>
+												<button class="btn table-action-btn delete"><svg>
+													<use xlink:href="#remove"></use>
+												</svg></button>
 											</td>
 										</tr>
 										<tr>
-											<td>14212413</td>
-											<td>Record: 28.08.2018 11:25:44</td>
-											<td>2018-08-28-1241412431-312312-11-25-44.mp3</td>
+											<td>3377</td>
+											<td>7.12.2018 14:34</td>
+											<td>callschema.newSchema</td>
+											<td>Входящая</td>
+											<td>7.12.2018 14:34</td>
+											<td>382741394731</td>
+											<td>Да</td>
 											<td>
-												<div class="table-action media">
-													<button class="btn table-action-btn play"><svg>
-														<use xlink:href="#play"></use>
-													</svg></button>
-													<button class="btn table-action-btn download"><svg>
-														<use xlink:href="#download"></use>
-													</svg></button>
-													<button class="btn table-action-btn delete"><svg>
-														<use xlink:href="#remove"></use>
-													</svg></button>
-												</div>
+												<button class="btn table-action-btn show popup-btn__open" data-popup="view-popup"><svg>
+													<use xlink:href="#eye"></use>
+												</svg></button>
+												<button class="btn table-action-btn edit"><svg>
+													<use xlink:href="#edit"></use>
+												</svg></button>
+												<button class="btn table-action-btn delete"><svg>
+													<use xlink:href="#remove"></use>
+												</svg></button>
 											</td>
 										</tr>
 										<tr>
-											<td>14212413</td>
-											<td>Record: 28.08.2018 11:25:44</td>
-											<td>2018-08-28-1241412431-312312-11-25-44.mp3</td>
+											<td>3377</td>
+											<td>7.12.2018 14:34</td>
+											<td>callschema.newSchema</td>
+											<td>Входящая</td>
+											<td>7.12.2018 14:34</td>
+											<td>382741394731</td>
+											<td>Да</td>
 											<td>
-												<div class="table-action media">
-													<button class="btn table-action-btn play"><svg>
-														<use xlink:href="#play"></use>
-													</svg></button>
-													<button class="btn table-action-btn download"><svg>
-														<use xlink:href="#download"></use>
-													</svg></button>
-													<button class="btn table-action-btn delete"><svg>
-														<use xlink:href="#remove"></use>
-													</svg></button>
-												</div>
+												<button class="btn table-action-btn show popup-btn__open" data-popup="view-popup"><svg>
+													<use xlink:href="#eye"></use>
+												</svg></button>
+												<button class="btn table-action-btn edit"><svg>
+													<use xlink:href="#edit"></use>
+												</svg></button>
+												<button class="btn table-action-btn delete"><svg>
+													<use xlink:href="#remove"></use>
+												</svg></button>
 											</td>
 										</tr>
 										<tr>
-											<td>14212413</td>
-											<td>Record: 28.08.2018 11:25:44</td>
-											<td>2018-08-28-1241412431-312312-11-25-44.mp3</td>
+											<td>3377</td>
+											<td>7.12.2018 14:34</td>
+											<td>callschema.newSchema</td>
+											<td>Входящая</td>
+											<td>7.12.2018 14:34</td>
+											<td>382741394731</td>
+											<td>Да</td>
 											<td>
-												<div class="table-action media">
-													<button class="btn table-action-btn play"><svg>
-														<use xlink:href="#play"></use>
-													</svg></button>
-													<button class="btn table-action-btn download"><svg>
-														<use xlink:href="#download"></use>
-													</svg></button>
-													<button class="btn table-action-btn delete"><svg>
-														<use xlink:href="#remove"></use>
-													</svg></button>
-												</div>
+												<button class="btn table-action-btn show popup-btn__open" data-popup="view-popup"><svg>
+													<use xlink:href="#eye"></use>
+												</svg></button>
+												<button class="btn table-action-btn edit"><svg>
+													<use xlink:href="#edit"></use>
+												</svg></button>
+												<button class="btn table-action-btn delete"><svg>
+													<use xlink:href="#remove"></use>
+												</svg></button>
 											</td>
 										</tr>
 										<tr>
-											<td>14212413</td>
-											<td>Record: 28.08.2018 11:25:44</td>
-											<td>2018-08-28-1241412431-312312-11-25-44.mp3</td>
+											<td>3377</td>
+											<td>7.12.2018 14:34</td>
+											<td>callschema.newSchema</td>
+											<td>Входящая</td>
+											<td>7.12.2018 14:34</td>
+											<td>382741394731</td>
+											<td>Да</td>
 											<td>
-												<div class="table-action media">
-													<button class="btn table-action-btn play"><svg>
-														<use xlink:href="#play"></use>
-													</svg></button>
-													<button class="btn table-action-btn download"><svg>
-														<use xlink:href="#download"></use>
-													</svg></button>
-													<button class="btn table-action-btn delete"><svg>
-														<use xlink:href="#remove"></use>
-													</svg></button>
-												</div>
+												<button class="btn table-action-btn show popup-btn__open" data-popup="view-popup"><svg>
+													<use xlink:href="#eye"></use>
+												</svg></button>
+												<button class="btn table-action-btn edit"><svg>
+													<use xlink:href="#edit"></use>
+												</svg></button>
+												<button class="btn table-action-btn delete"><svg>
+													<use xlink:href="#remove"></use>
+												</svg></button>
 											</td>
 										</tr>
 										<tr>
-											<td>14212413</td>
-											<td>Record: 28.08.2018 11:25:44</td>
-											<td>2018-08-28-1241412431-312312-11-25-44.mp3</td>
+											<td>3377</td>
+											<td>7.12.2018 14:34</td>
+											<td>callschema.newSchema</td>
+											<td>Входящая</td>
+											<td>7.12.2018 14:34</td>
+											<td>382741394731</td>
+											<td>Да</td>
 											<td>
-												<div class="table-action media">
-													<button class="btn table-action-btn play"><svg>
-														<use xlink:href="#play"></use>
-													</svg></button>
-													<button class="btn table-action-btn download"><svg>
-														<use xlink:href="#download"></use>
-													</svg></button>
-													<button class="btn table-action-btn delete"><svg>
-														<use xlink:href="#remove"></use>
-													</svg></button>
-												</div>
+												<button class="btn table-action-btn show popup-btn__open" data-popup="view-popup"><svg>
+													<use xlink:href="#eye"></use>
+												</svg></button>
+												<button class="btn table-action-btn edit"><svg>
+													<use xlink:href="#edit"></use>
+												</svg></button>
+												<button class="btn table-action-btn delete"><svg>
+													<use xlink:href="#remove"></use>
+												</svg></button>
 											</td>
 										</tr>
 										<tr>
-											<td>14212413</td>
-											<td>Record: 28.08.2018 11:25:44</td>
-											<td>2018-08-28-1241412431-312312-11-25-44.mp3</td>
+											<td>3377</td>
+											<td>7.12.2018 14:34</td>
+											<td>callschema.newSchema</td>
+											<td>Входящая</td>
+											<td>7.12.2018 14:34</td>
+											<td>382741394731</td>
+											<td>Да</td>
 											<td>
-												<div class="table-action media">
-													<button class="btn table-action-btn play"><svg>
-														<use xlink:href="#play"></use>
-													</svg></button>
-													<button class="btn table-action-btn download"><svg>
-														<use xlink:href="#download"></use>
-													</svg></button>
-													<button class="btn table-action-btn delete"><svg>
-														<use xlink:href="#remove"></use>
-													</svg></button>
-												</div>
+												<button class="btn table-action-btn show popup-btn__open" data-popup="view-popup"><svg>
+													<use xlink:href="#eye"></use>
+												</svg></button>
+												<button class="btn table-action-btn edit"><svg>
+													<use xlink:href="#edit"></use>
+												</svg></button>
+												<button class="btn table-action-btn delete"><svg>
+													<use xlink:href="#remove"></use>
+												</svg></button>
 											</td>
 										</tr>
-										<!--  -->
 									</tbody>
 								</table>
 							</div>
@@ -711,45 +767,153 @@
 				</div>
 				<!--  -->
 				<div class="base-popup">
-					<div class="base-popup__container">
+					<div class="base-popup__container" style="max-width: 500px;">
 						<div class="base-popup__title">Создать</div>
-						<form action="">
+						<form action="" style="flex-wrap: wrap;">
 							<div class="col">
 								<div class="input-block required">
-									<label for="input_1">DNS</label>
+									<label for="input_1">Название</label>
 									<input type="text" id="input_1" name="input_1">
 								</div>
-								<div class="input-block required">
-									<label for="input_2">Адрес</label>
-									<input type="text" id="input_2" name="input_2">
-								</div>
-								<div class="input-block required">
-									<label for="input_3">callManager ID</label>
-									<input type="text" id="input_3" name="input_3">
+								<div class="select-block">
+									<label>Активная</label>
+									<div class="base-toggle">
+								        <input type="checkbox" id="check_1" name="check_1">
+								        <label for="check_1">
+								          <span class="toggle-btn">
+								            <span class="o"></span>
+								          </span>
+								        </label>
+								      </div>
 								</div>
 							</div>
 							<div class="col">
-								<div class="ami-block">
-									<div class="title">AMI</div>
-									<div class="inputs">
-										<div class="input-block">
-											<label for="input_4">Логин (AMI)</label>
-											<input type="text" id="input_4" name="input_4">
-										</div>
-										<div class="input-block">
-											<label for="input_5">Пароль (AMI)</label>
-											<input type="text" id="input_5" name="input_5">
-										</div>
-									</div>
-									
+								<div class="select-block required">
+									<label>Тип схемы звонка</label>
+									<dl class="select select-filter select-flag scrollable">
+										<dt class="">
+											<input type="text" name="scope" class="required">
+										</dt>
+										<dd>
+											<div class="select-options">
+												<div class="scroll-cont scrollbar-inner">
+													<a data-value="10">Вариант 1</a>
+													<a data-value="20" >Вариант 2</a>
+												</div>
+											</div>
+										</dd>
+									</dl>
 								</div>
-								
+								<div class="select-block">
+									<label>Внешний номер</label>
+									<dl class="select select-filter select-flag scrollable">
+										<dt class="">
+											<input type="text" name="scope1" class="">
+										</dt>
+										<dd>
+											<div class="select-options">
+												<div class="scroll-cont scrollbar-inner">
+													<a data-value="10">Вариант 1</a>
+													<a data-value="20" >Вариант 2</a>
+												</div>
+											</div>
+										</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="col" style="width: 100%;">
+								<div class="input-block required textarea">
+									<label for="input_1">Схема звонка</label>
+									<textarea name="tt" id="tt"></textarea>
+								</div>
 							</div>
 						</form>
 						<div class="base-popup__footer">
 							<button class="btn base-btn grey popup-btn__close">Отмена</button>
-							<button class="btn base-btn line">Создать и редактировать</button>
 							<button class="btn base-btn">Создать</button>
+						</div>
+					</div>
+				</div>
+				<!--  -->
+
+				<div class="base-popup" data-popup="view-popup">
+					<div class="base-popup__container">
+						<div class="base-popup__title">Схема звонков</div>
+						<form action="" style="flex-wrap: wrap;">
+							<div class="col">
+								<div class="input-block disabled">
+									<label for="input_14">ID</label>
+									<input type="text" id="input_14" name="input_14" value="12327">
+								</div>
+								<div class="input-block disabled">
+									<label for="input_1">Название</label>
+									<input type="text" id="input_1" name="input_1" value="callschema.newSchema">
+								</div>
+								<div class="select-block">
+									<label>Активная</label>
+									<div class="base-toggle disabled">
+								        <input type="checkbox" id="check_1" name="check_1" checked>
+								        <label for="check_1">
+								          <span class="toggle-btn">
+								            <span class="o"></span>
+								          </span>
+								        </label>
+								      </div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="select-block disabled">
+									<label>Тип схемы звонка</label>
+									<dl class="select select-filter select-flag scrollable">
+										<dt class="">
+											<input type="text" name="scope" class="required" value="Входящая">
+										</dt>
+										<dd>
+											<div class="select-options">
+												<div class="scroll-cont scrollbar-inner">
+													<a data-value="10">Вариант 1</a>
+													<a data-value="20" >Вариант 2</a>
+												</div>
+											</div>
+										</dd>
+									</dl>
+								</div>
+								<div class="select-block  disabled">
+									<label>Внешний номер</label>
+									<dl class="select select-filter select-flag scrollable">
+										<dt class="">
+											<input type="text" name="scope1" class="" value="4151245123">
+										</dt>
+										<dd>
+											<div class="select-options">
+												<div class="scroll-cont scrollbar-inner">
+													<a data-value="10">Вариант 1</a>
+													<a data-value="20" >Вариант 2</a>
+												</div>
+											</div>
+										</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="col" style="width: 100%;">
+								<div class="input-block required textarea disabled">
+									<label for="input_1">Схема звонка</label>
+									<textarea name="tt" id="tt">{"menu": {
+  "id": "file",
+  "value": "File",
+  "popup": {
+    "menuitem": [
+      {"value": "New", "onclick": "CreateNewDoc()"},
+      {"value": "Open", "onclick": "OpenDoc()"},
+      {"value": "Close", "onclick": "CloseDoc()"}
+    ]
+  }
+}}</textarea>
+								</div>
+							</div>
+						</form>
+						<div class="base-popup__footer">
+							<button class="btn base-btn grey popup-btn__close" data-popup="view-popup">Отмена</button>
 						</div>
 					</div>
 				</div>

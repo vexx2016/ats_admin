@@ -452,6 +452,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .base-toggle {
   margin-bottom: 24px; }
+  .base-toggle.disabled {
+    opacity: .35;
+    pointer-events: none;
+    cursor: not-allowed; }
   .base-toggle.error .toggle-btn {
     background: #f51d39; }
   .base-toggle input[type=checkbox] {
@@ -732,6 +736,16 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 340px;
   width: 100%;
   margin-bottom: 20px; }
+  .input-block.textarea {
+    max-width: 100%; }
+    .input-block.textarea.disabled {
+      cursor: not-allowed; }
+      .input-block.textarea.disabled textarea {
+        background: #e6e6e6;
+        opacity: 0.35;
+        pointer-events: auto; }
+      .input-block.textarea.disabled > * {
+        cursor: not-allowed; }
   .input-block.required label:after {
     content: "*";
     color: #f18a17;
@@ -739,10 +753,10 @@ h1, h2, h3, h4, h5, h6 {
   .input-block.white label {
     color: #fff; }
   .input-block.disabled {
-    cursor: not-allowed;
-    opacity: 0.35; }
+    cursor: not-allowed; }
     .input-block.disabled input {
-      background: #e6e6e6; }
+      background: #e6e6e6;
+      opacity: 0.35; }
     .input-block.disabled > * {
       cursor: not-allowed;
       pointer-events: none; }
@@ -755,6 +769,18 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 13px;
     font-family: font-b, helvetica, arial sans-serif;
     margin-bottom: 4px; }
+  .input-block textarea {
+    width: 100%;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    border: solid 1px rgba(0, 0, 0, 0.12);
+    background: #fff;
+    font-size: 15px;
+    padding: 6px 10px;
+    font-family: font, helvetica, arial sans-serif;
+    min-height: 200px;
+    max-width: 100%;
+    min-width: 100%; }
   .input-block input {
     width: 100%;
     -webkit-border-radius: 3px;
@@ -769,6 +795,13 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 340px;
   width: 100%;
   margin-bottom: 20px; }
+  .select-block.disabled dt {
+    cursor: not-allowed;
+    opacity: 0.35;
+    background: #e6e6e6;
+    pointer-events: none; }
+    .select-block.disabled dt > * {
+      cursor: not-allowed; }
   .select-block.required label:after {
     content: "*";
     color: #f18a17;
