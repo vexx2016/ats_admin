@@ -90,12 +90,12 @@
 				</div>
 			</div>
 			<div class="profile-links">
-				<a href="#" class="notification-link base-notification" data-notification="12">
-					<svg>
-						<use xlink:href="#ring"></use>
-					</svg>
-				</a>
-				<a href="#" class="mail-link base-notification" data-notification="7">
+				<button class="notification-link base-notification btn popup-btn__open" data-notification="12" data-popup="notif-popup">
+								<svg>
+									<use xlink:href="#ring"></use>
+								</svg>
+							</button>
+				<a href="../messages.html" class="mail-link base-notification" data-notification="7">
 					<svg>
 						<use xlink:href="#mail"></use>
 					</svg>
@@ -226,7 +226,18 @@
 		
 	</div>
 	
-</aside>
+<!--  -->
+				<div class="base-popup" data-popup="notif-popup">
+					<div class="base-popup__container">
+						<div class="base-popup__title">Оповещения</div>
+						<p>Content</p>
+						<div class="base-popup__footer">
+							<button class="btn base-btn grey popup-btn__close" data-popup="notif-popup">Закрыть</button>
+						</div>
+					</div>
+				</div>
+				<!--  -->
+			</aside>
 			<div class="main-container">
 				<div class="scrollbar-inner">
 					<header class="main-container__header">

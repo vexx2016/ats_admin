@@ -587,6 +587,7 @@ h1, h2, h3, h4, h5, h6 {
     left: initial; }
 
 .base-checkbox {
+  min-width: 20px;
   position: relative;
   text-align: left; }
   .base-checkbox.disabled {

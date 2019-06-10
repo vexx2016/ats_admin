@@ -1665,6 +1665,81 @@ body {
       .main-container .dashboard-card.table .scroll-wrapper > .scroll-content {
         padding-right: 10px; }
 
+.messages-page .page-filters .select {
+  margin-right: 70px; }
+
+.messages-page .page-filters .sort-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .messages-page .page-filters .sort-block .select {
+    min-width: 280px; }
+  .messages-page .page-filters .sort-block .label {
+    color: #7b7b7b;
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+    margin-right: 10px; }
+
+.messages-page thead svg {
+  max-width: 22px;
+  max-height: 22px; }
+
+.messages-page__icon {
+  max-width: 22px;
+  max-height: 22px; }
+
+.messages-page__theme-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .messages-page__theme-block a {
+    margin-right: 30px;
+    max-width: 360px;
+    border: none; }
+    .messages-page__theme-block a:hover {
+      text-decoration: underline; }
+  .messages-page__theme-block .person {
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+    width: 35px;
+    height: 35px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    border: 2px solid #fff;
+    margin-left: -6px;
+    position: relative; }
+    .messages-page__theme-block .person img {
+      -webkit-border-radius: 50%;
+              border-radius: 50%; }
+    .messages-page__theme-block .person:before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      border: solid 1px #fff;
+      position: absolute;
+      bottom: 0;
+      left: 0; }
+    .messages-page__theme-block .person.green:before {
+      background: green; }
+    .messages-page__theme-block .person.yellow:before {
+      background: #f18a17; }
+    .messages-page__theme-block .person.red:before {
+      background: red; }
+
 @media (max-width: 1160px) {
   .main-container__body .row {
     -webkit-flex-wrap: wrap;
@@ -2115,6 +2190,7 @@ body {
         -webkit-transition: 0.35s ease;
         -o-transition: 0.35s ease;
         transition: 0.35s ease; }
+      .main-sidebar__profile .profile-links .btn:hover svg,
       .main-sidebar__profile .profile-links a:hover svg {
         fill: #f18a17; }
       .main-sidebar__profile .profile-links .notification-link {
