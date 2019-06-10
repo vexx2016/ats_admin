@@ -2339,6 +2339,16 @@ body {
         -webkit-transition: .353s ease;
         -o-transition: .353s ease;
         transition: .353s ease; }
+  .main-sidebar .main-container {
+    display: block;
+    overflow: visible;
+    height: initial; }
+    .main-sidebar .main-container .dashboard-card {
+      display: block;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      border: none;
+      padding: 0; }
 
 @media (min-width: 1000px) {
   .main-sidebar.minimize {
