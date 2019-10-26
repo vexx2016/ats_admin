@@ -613,7 +613,8 @@ body {
     .base-popup.opened .base-popup__container {
       -webkit-transform: translateY(0%);
           -ms-transform: translateY(0%);
-              transform: translateY(0%); }
+              transform: translateY(0%);
+      pointer-events: auto; }
   .base-popup__container {
     background: #fff;
     padding: 28px;
@@ -627,7 +628,8 @@ body {
     -webkit-transform: translateY(10%);
         -ms-transform: translateY(10%);
             transform: translateY(10%);
-    margin-top: 10vh; }
+    margin-top: 10vh;
+    pointer-events: none; }
     .base-popup__container form {
       display: -webkit-box;
       display: -webkit-flex;
@@ -1740,6 +1742,49 @@ body {
     .messages-page__theme-block .person.red:before {
       background: red; }
 
+.ats-edit__tab .base-tab__body,
+.ats-view__tab .base-tab__body {
+  margin-bottom: 70px; }
+  .ats-edit__tab .base-tab__body .table-header,
+  .ats-view__tab .base-tab__body .table-header {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+  .ats-edit__tab .base-tab__body .tbl-ttl,
+  .ats-view__tab .base-tab__body .tbl-ttl {
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 20px;
+    font-family: font-b, helvetica, arial sans-serif; }
+  .ats-edit__tab .base-tab__body form,
+  .ats-view__tab .base-tab__body form {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .ats-edit__tab .base-tab__body form .col,
+    .ats-view__tab .base-tab__body form .col {
+      width: 50%; }
+    .ats-edit__tab .base-tab__body form.form-to-show .select-block label,
+    .ats-edit__tab .base-tab__body form.form-to-show .input-block label,
+    .ats-view__tab .base-tab__body form.form-to-show .select-block label,
+    .ats-view__tab .base-tab__body form.form-to-show .input-block label {
+      font-family: font, helvetica, arial sans-serif;
+      opacity: .55; }
+    .ats-edit__tab .base-tab__body form .select-block .value,
+    .ats-edit__tab .base-tab__body form .input-block .value,
+    .ats-view__tab .base-tab__body form .select-block .value,
+    .ats-view__tab .base-tab__body form .input-block .value {
+      font-size: 18px;
+      margin-top: 5px;
+      min-height: 18px;
+      font-family: font, helvetica, arial sans-serif; }
+
+.ats-edit__tab .base-popup__footer,
+.ats-view__tab .base-popup__footer {
+  text-align: left; }
+
 @media (max-width: 1160px) {
   .main-container__body .row {
     -webkit-flex-wrap: wrap;
@@ -1884,7 +1929,15 @@ body {
     width: auto;
     margin-right: 10px; }
   .main-container .dashboard-card.actions {
-    height: auto; } }
+    height: auto; }
+  .ats-edit__tab .base-tab__body form,
+  .ats-view__tab .base-tab__body form {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .ats-edit__tab .base-tab__body form .col,
+  .ats-view__tab .base-tab__body form .col {
+    width: 100%; } }
 
 /*************** SCROLLBAR BASE CSS ***************/
 .scroll-wrapper {

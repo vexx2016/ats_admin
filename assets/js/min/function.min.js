@@ -423,11 +423,11 @@
               // base tabs
               $('.base-tab__btn').click(function() {
                 var tn = '.base-tab__block[data-tabname="'+$(this).attr("data-tabname")+'"]';
-                // console.log(tn)
+                console.log(tn)
                 $('.base-tab__block.active').removeClass('active')
                 $('.base-tab__btn.active').removeClass('active')
                 $(this).addClass('active')
-                $(this).closest('.base-popup').find(tn).addClass('active')
+                $(this).closest('.base-tab').find(tn).addClass('active')
               });
 
 
