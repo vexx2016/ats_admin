@@ -1742,6 +1742,10 @@ body {
     .messages-page__theme-block .person.red:before {
       background: red; }
 
+.ats-edit__tab .base-tab__header .btn,
+.ats-view__tab .base-tab__header .btn {
+  font-size: 15px; }
+
 .ats-edit__tab .base-tab__body,
 .ats-view__tab .base-tab__body {
   margin-bottom: 70px; }
